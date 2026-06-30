@@ -23,7 +23,7 @@ viennent ensuite.
 | Skill | Niveau | État |
 |-------|--------|------|
 | [`declutter-coach`](skills/declutter-coach/) | 1 · Coaching de tri | ✅ v0 |
-| `where-to-sell-fr` | 2 · Quoi en faire | 🚧 à venir |
+| [`where-to-sell-fr`](skills/where-to-sell-fr/) | 2 · Quoi en faire | ✅ v0 |
 | `listing-drafter` | 3 · Préparer la vente | 🚧 à venir |
 | `sale-tracker` | 4 · Suivi | 🔭 plus tard |
 
