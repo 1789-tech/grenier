@@ -1,0 +1,40 @@
+{
+  "name": "grenier",
+  "title": "grenier — désencombrer & revendre",
+  "description": "Collection de Claude Skills pour trier sa maison et transformer le bazar en objets vendus, donnés ou recyclés. France-first, open source.",
+  "homepage": "https://grenier.1789.tech",
+  "repository": "https://github.com/1789-tech/grenier",
+  "license": "MIT",
+  "locale": "fr-FR",
+  "maintainer": "1789 (https://1789.tech)",
+  "tags": ["declutter", "desencombrement", "resale", "revente", "france", "leboncoin", "vinted", "emmaus", "recycling"],
+  "skills": [
+    {
+      "name": "declutter-coach",
+      "path": "skills/declutter-coach",
+      "level": 1,
+      "status": "v0",
+      "title": "Coaching de tri",
+      "description": "Coache pas à pas pour désencombrer : une zone, un créneau court, quatre destinations, zéro 'peut-être'."
+    },
+    {
+      "name": "where-to-sell-fr",
+      "path": "skills/where-to-sell-fr",
+      "level": 2,
+      "status": "v0",
+      "title": "Quoi en faire (France)",
+      "description": "Pour un objet à traiter : vendre (et où), donner, recycler ou jeter — arbitrage valeur/effort et canaux français."
+    },
+    {
+      "name": "listing-drafter",
+      "path": "skills/listing-drafter",
+      "level": 3,
+      "status": "v0",
+      "title": "Rédiger l'annonce",
+      "description": "D'une photo ou description à une annonce prête à publier : identification, prix, plateforme, titre et description."
+    }
+  ],
+  "roadmap": [
+    { "name": "sale-tracker", "level": 4, "status": "planned", "title": "Suivi de vente" }
+  ]
+}

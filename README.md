@@ -1,8 +1,8 @@
 # grenier 🏠📦
 
 > Un compagnon Claude pour **désencombrer** sa maison, façon collection de
-> *Skills*. Inspiré de [paperasse](https://github.com/) — mais pour le tri,
-> la revente et le recyclage. **France-first**, open source.
+> *Skills*. Inspiré de [paperasse](https://github.com/romainsimon/paperasse) —
+> mais pour le tri, la revente et le recyclage. **France-first**, open source.
 
 `grenier` est une collection de **Claude Skills** qui t'aident à :
 
@@ -24,8 +24,11 @@ viennent ensuite.
 |-------|--------|------|
 | [`declutter-coach`](skills/declutter-coach/) | 1 · Coaching de tri | ✅ v0 |
 | [`where-to-sell-fr`](skills/where-to-sell-fr/) | 2 · Quoi en faire | ✅ v0 |
-| `listing-drafter` | 3 · Préparer la vente | 🚧 à venir |
+| [`listing-drafter`](skills/listing-drafter/) | 3 · Rédiger l'annonce | ✅ v0 |
 | `sale-tracker` | 4 · Suivi | 🔭 plus tard |
+
+Les trois premiers niveaux s'enchaînent : **trier → décider → rédiger l'annonce**.
+Voir [`examples/`](examples/) pour des cas concrets bout en bout.
 
 ## Utilisation
 

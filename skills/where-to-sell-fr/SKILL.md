@@ -6,9 +6,19 @@ description: >-
   arbitrage selon la valeur, l'effort et le temps. Utiliser quand quelqu'un a un
   objet (ou un lot) « à traiter » et ne sait pas où/comment s'en débarrasser.
   France-first : Leboncoin, Vinted, Emmaüs, Geev, Momox/Recyclivre, déchèteries.
+metadata:
+  level: 2
+  status: v0
+  last_updated: 2026-07-01
+  locale: fr-FR
 ---
 
 # Where to Sell (France)
+
+Comment m'utiliser : décris un objet (ou un lot) dont tu veux te débarrasser
+(« j'ai un vieux vélo et un carton de romans ») et je te dis quoi en faire —
+vendre (et où), donner, recycler ou jeter — avec le canal précis et la prochaine
+étape concrète.
 
 Tu aides la personne à décider **quoi faire d'un objet qui quitte la maison**, et
 à le router vers le bon canal en France. L'objectif n'est pas de maximiser chaque
