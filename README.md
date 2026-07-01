@@ -43,19 +43,27 @@ falls back to sensible global guidance and tells you so.
 
 These Skills follow the [Claude Agent Skills](https://docs.claude.com) format.
 
-**Copy them into Claude Code:**
+**Easiest — let your agent install them (no clone).** Paste this into
+[Claude Code](https://claude.com/claude-code) (or any Skills-compatible agent):
+
+```
+Install the grenier skills from https://github.com/1789-tech/grenier
+into ~/.claude/skills/, then help me start decluttering.
+```
+
+The agent fetches the `skills/` folder, drops each Skill into `~/.claude/skills/`,
+and you're ready. Restart Claude Code and just describe your situation — the right
+Skill triggers itself. No commands to memorize.
+
+**By hand (if you prefer):**
 
 ```bash
 git clone https://github.com/1789-tech/grenier
 cp -r grenier/skills/* ~/.claude/skills/
 ```
 
-Restart Claude Code, then just go — no special command. Describe your situation
-and the right Skill triggers itself.
-
-**Or point Claude at the repo:** open Claude Code (or any Skills-compatible
-harness) inside the cloned `grenier/` folder and the Skills in `skills/` are
-available directly.
+**Or point Claude at the repo:** open Claude Code inside the cloned `grenier/`
+folder and the Skills in `skills/` are available directly.
 
 ## Say something like…
 
