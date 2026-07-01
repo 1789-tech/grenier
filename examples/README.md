@@ -1,16 +1,19 @@
-# Exemples grenier
+# grenier examples
 
-Des cas concrets, du bazar à l'annonce publiée. Chaque fichier montre **ce que tu
-dis** à Claude (une fois une Skill installée) et **ce que tu obtiens** — pas de
-commande à retenir, tu décris ta situation en langage normal.
+Concrete cases, from clutter to a published listing. Each file shows **what you
+say** to Claude (once a Skill is installed) and **what you get** — no command to
+remember, you describe your situation in plain language.
 
-| Cas | Skill principale | Fichier |
-|-----|------------------|---------|
-| Attaquer un garage en bazar | `declutter-coach` | [garage-en-bazar.md](garage-en-bazar.md) |
-| Un lot mélangé « à traiter » | `where-to-sell-fr` | [lot-melange.md](lot-melange.md) |
-| Rédiger l'annonce d'un vélo | `listing-drafter` | [annonce-velo.md](annonce-velo.md) |
-| Vendre un carton de livres | `where-to-sell-fr` + `listing-drafter` | [carton-de-livres.md](carton-de-livres.md) |
-| Le parcours complet, bout en bout | les 3 Skills | [parcours-complet.md](parcours-complet.md) |
+| Case | Main skill | File |
+|------|-----------|------|
+| Take on a messy garage | `declutter` | [messy-garage.md](messy-garage.md) |
+| A mixed lot to deal with | `sell` | [mixed-lot.md](mixed-lot.md) |
+| Draft a bike ad | `listing` | [bike-listing.md](bike-listing.md) |
+| Sell a box of books | `sell` + `listing` | [box-of-books.md](box-of-books.md) |
+| "What do I even do with this?" (single item) | `sell` | [single-item-decision.md](single-item-decision.md) |
+| US user selling furniture (country adaptation) | `sell` + `listing` | [us-furniture.md](us-furniture.md) |
+| UK user with electronics & e-waste | `sell` | [uk-electronics.md](uk-electronics.md) |
+| The full journey, end to end | all 3 skills | [full-journey.md](full-journey.md) |
 
-> Les sorties Claude sont abrégées pour l'exemple — en vrai, tu obtiens le détail
-> complet. Les prix sont des ordres de grandeur illustratifs.
+> Claude's outputs are abbreviated for the examples — in reality you get the full
+> detail. Prices are illustrative ballpark figures, not promises.

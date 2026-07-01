@@ -1,76 +1,89 @@
 # grenier 🏠📦
 
-> Un compagnon Claude pour **désencombrer** sa maison, façon collection de
-> *Skills*. Inspiré de [paperasse](https://github.com/romainsimon/paperasse) —
-> mais pour le tri, la revente et le recyclage. **France-first**, open source.
+> A Claude companion for **decluttering** your home — as a collection of *Skills*.
+> Sort it, decide what to do with it, sell or donate or recycle it. **English by
+> default, and it knows your local marketplaces.** Open source.
 
-`grenier` est une collection de **Claude Skills** qui t'aident à :
+`grenier` is a collection of **Claude Skills** that help you:
 
-1. **Trier** — méthode, exercices, étapes, techniques pour t'attaquer au bazar.
-2. **Décider quoi en faire** — pour chaque objet : vendre (et où), donner,
-   recycler, jeter. Plateformes françaises (Leboncoin, Vinted, Emmaüs, Geev,
-   Momox/Recyclivre pour les livres…).
-3. **Préparer la vente** — d'une photo, deviner l'objet, suggérer un prix,
-   rédiger l'annonce, grouper les lots.
-4. **Suivre la vente** — répondre aux acheteurs, optimiser la logistique.
+1. **Sort** — a method, exercises, steps and techniques to take on the clutter.
+2. **Decide what to do with each thing** — sell (and where), donate, recycle, or
+   trash — with the right effort/value trade-off.
+3. **Prepare the sale** — from a photo or a line of text: identify the item,
+   suggest a price, write the listing, bundle lots.
+4. **Track the sale** — answer buyers, handle logistics (coming later).
 
-On commence petit : des Skills purement *prompt* (niveaux 1–2), utiles dès le
-premier jour. Les parties agentiques (vision photo, scraping de prix, suivi)
-viennent ensuite.
+We start small: pure *prompt* Skills (levels 1–2) that are useful from day one.
+The agentic parts (photo vision, price scraping, tracking) come next.
 
 ## Skills
 
-| Skill | Niveau | État |
-|-------|--------|------|
-| [`declutter-coach`](skills/declutter-coach/) | 1 · Coaching de tri | ✅ v0 |
-| [`where-to-sell-fr`](skills/where-to-sell-fr/) | 2 · Quoi en faire | ✅ v0 |
-| [`listing-drafter`](skills/listing-drafter/) | 3 · Rédiger l'annonce | ✅ v0 |
-| `sale-tracker` | 4 · Suivi | 🔭 plus tard |
+| Skill | Level | Status |
+|-------|-------|--------|
+| [`declutter`](skills/declutter/) | 1 · Sorting coach | ✅ v0 |
+| [`sell`](skills/sell/) | 2 · What to do with it | ✅ v0 |
+| [`listing`](skills/listing/) | 3 · Draft the ad | ✅ v0 |
+| `sale-tracker` | 4 · Follow-up | 🔭 later |
 
-Les trois premiers niveaux s'enchaînent : **trier → décider → rédiger l'annonce**.
-Voir [`examples/`](examples/) pour des cas concrets bout en bout.
+The first three chain together: **sort → decide → draft the listing.** See
+[`examples/`](examples/) for concrete end-to-end cases.
 
-## Utilisation
+## Works anywhere
 
-Ces Skills suivent le format [Claude Agent Skills](https://docs.claude.com). Deux
-façons de démarrer :
+The Skills are written in **English** and country-agnostic at their core. The
+`sell` and `listing` Skills load a small **local recipe** for your country —
+which marketplaces, donation networks, recycling routes and listing conventions
+apply where you live.
 
-**Option A — copier une Skill (le plus simple)**
+**France, US and UK today** — and adding yours is one file
+(`countries/<iso2>.md`). If there's no recipe for your country yet, the Skill
+falls back to sensible global guidance and tells you so.
+
+## Install
+
+These Skills follow the [Claude Agent Skills](https://docs.claude.com) format.
+
+**Copy them into Claude Code:**
 
 ```bash
 git clone https://github.com/1789-tech/grenier
-cp -r grenier/skills/declutter-coach ~/.claude/skills/
+cp -r grenier/skills/* ~/.claude/skills/
 ```
 
-Relance Claude Code, puis lance-toi — pas besoin de commande spéciale, décris ta
-situation et la Skill se déclenche toute seule :
+Restart Claude Code, then just go — no special command. Describe your situation
+and the right Skill triggers itself.
 
-> « J'ai un garage bordélique et je sais pas par où commencer. »
-> → `declutter-coach` prend la main : une zone, un créneau de 15 min, on trie.
+**Or point Claude at the repo:** open Claude Code (or any Skills-compatible
+harness) inside the cloned `grenier/` folder and the Skills in `skills/` are
+available directly.
 
-> « J'ai un vieux vélo, un carton de romans et une imprimante à me débarrasser. »
-> → `where-to-sell-fr` arbitre pour chaque objet : vendre (et où), donner,
-> recycler ou jeter.
+## Say something like…
 
-**Option B — pointer sur le repo**
+No coding needed. If you can chat with Claude, you can use grenier. Try:
 
-Ouvre Claude Code (ou tout harnais compatible Skills) dans le dossier `grenier/`
-cloné : les Skills du dossier `skills/` sont disponibles directement.
+| You say… | Skill that triggers |
+|----------|---------------------|
+| "My garage is a total mess and I don't know where to start." | `declutter` |
+| "Help me sort my bedroom, I've got 20 minutes." | `declutter` |
+| "I've got an old bike, a box of novels and a broken printer to get rid of." | `sell` |
+| "Where do I sell or donate this old sofa?" | `sell` |
+| "I'm in the US — what do I do with a bunch of furniture I don't want?" | `sell` (US recipe) |
+| "UK here — I've got dead electronics and e-waste to deal with." | `sell` (UK recipe) |
+| "Write me the ad for my bike: Trek FX 2, size M, good condition." | `listing` |
+| "Draft a listing for this coffee table." *(paste a photo)* | `listing` |
+| "What do I even do with this single weird item?" | `sell` |
+| "Turn my box of 40 books into the simplest possible outcome." | `sell` → `listing` |
 
-### Les Skills en un coup d'œil
+## Contributing
 
-| Tu veux… | Dis quelque chose comme… | Skill |
-|----------|--------------------------|-------|
-| T'attaquer au bazar sans stress | « aide-moi à trier ma chambre » | `declutter-coach` |
-| Savoir quoi faire d'un objet | « où je revends / donne ça ? » | `where-to-sell-fr` |
+The most useful contributions: **local recipes** (add your country) and improving
+the existing Skills. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-Pas besoin de coder. Si tu sais discuter avec Claude, tu sais utiliser grenier.
+## License
 
-## Licence
-
-MIT — voir [LICENSE](LICENSE). Contributions bienvenues, surtout les recettes
-locales (autres pays, autres plateformes).
+MIT — see [LICENSE](LICENSE). Contributions welcome, especially local recipes for
+new countries and platforms.
 
 ---
 
-*Un produit [1789](https://1789.tech) · vitrine : [grenier.1789.tech](https://grenier.1789.tech)*
+*A product of [1789](https://1789.tech) · grenier.1789.tech*
