@@ -20,4 +20,4 @@
   bag by the front door), and a number: "1 shelf, 22 items, 1 donate bag."
 - **Next micro-target** suggested, not imposed.
 
-Every item marked `sell/donate` → hand off to `sell`.
+Every item marked `sell/donate` → hand off to `offload`.

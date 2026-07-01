@@ -1,6 +1,6 @@
 # Example — a mixed lot to deal with
 
-**Skill:** `sell` *(France recipe, for illustration)*
+**Skill:** `offload` *(France recipe, for illustration)*
 
 ## What you say
 
@@ -10,11 +10,11 @@
 
 ## What Claude does (abbreviated)
 
-`sell` detects the country (French context here → reads `countries/fr.md`) and
+`offload` detects the country (French context here → reads `countries/fr.md`) and
 **groups by channel** instead of item by item:
 
 - **Working bike** → *Leboncoin*, local pickup. Real value, sells fast locally.
-  → draft the ad via `listing`.
+  → draft the ad via `sell`.
 - **30 novels** → *Momox / RecycLivre*: scan the ISBNs, they buy and pay postage.
   Zero friction for low-per-item volume.
 - **Dead microwave** → *déchèterie / e-waste (DEEE)* or in-store take-back

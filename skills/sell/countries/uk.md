@@ -1,45 +1,50 @@
-# Sell — United Kingdom (uk)
+# Listing — United Kingdom (uk)
 
-Currency: £ · Local collection is common and free; shipping for smaller/valuable
-items. "Collection only" is a normal listing term.
+Currency: £ · Write the listing in English (UK spelling).
 
-## Sell — individually
+## Title format
 
-| Channel | Best for | Notes |
-|---------|----------|-------|
-| **Facebook Marketplace** | Furniture, appliances, decor, bikes, tools, baby gear | The default for most local items. Free, big reach, collection in person. |
-| **Gumtree** | Furniture, appliances, local goods | Long-standing local classifieds; cash + collection. |
-| **eBay UK** | Electronics, collectibles, shippable/niche items, national buyers | Fees apply; strong for anything postable with value. |
-| **Vinted** | Clothes, shoes, bags, accessories; increasingly home/books | Buyer pays fees, easy postage. |
-| **Specialized** | Trade-in for phones/tech (musicMagpie, CeX in-store), designer fashion (Vestiaire, Depop) | Best price for the right category. |
+- Pattern: **Brand + Model + key spec + condition**.
+  e.g. `Carrera Subway 1 Hybrid Bike - Size M - Good Condition`.
+- Front-load searchable keywords. No emojis, no ALL CAPS.
 
-## Sell — in bulk (volume, minimal effort)
+## Pricing norms
 
-- **Books / CDs / DVDs / games** → **Ziffit / musicMagpie / We Buy Books**: scan
-  barcodes, they quote and pay postage. Low per-item, zero friction.
-- **Clothes in bulk** → Vinted "bundle", or donate to a charity shop.
-- **Everything at once** → car boot sale to clear low-value items in a morning.
+- On **Facebook Marketplace / Gumtree**, some haggling is normal — price ~10%
+  above target, or add "ONO" (or nearest offer). "£40 firm" signals no haggling.
+- On **eBay UK**, fixed-price with "Best Offer" is the low-effort default; factor
+  in fees + postage.
+- On **Vinted**, buyers send offers — price a touch high and accept a fair one.
+- Round to clean numbers (£25, £40).
 
-## Donate
+## Categories (by platform)
 
-- **Charity shops** — British Heart Foundation, Oxfam, Cancer Research, Sue Ryder,
-  etc. BHF and some others collect large furniture/electrical items for free.
-  Gift Aid boosts the value if you're a UK taxpayer.
-- **Freecycle / Freegle** — hyperlocal give-away networks; a neighbour collects
-  today. Great for good-but-cheap items.
-- **Furniture reuse charities** — local schemes rehome sofas/beds (must have fire
-  labels).
-- **British Heart Foundation / local reuse** — for working electricals and
-  furniture.
+- **Facebook Marketplace** — native category (Furniture, Electronics, Appliances,
+  Bicycles, Clothing…). Set condition and location.
+- **eBay UK / Vinted** — exact category + item specifics (brand, model, size)
+  drive search; fill them.
 
-## Recycle / dispose (correctly)
+## What buyers expect
 
-- **WEEE (electricals)** — retailer take-back on purchase, or the Household Waste
-  Recycling Centre (HWRC / "the tip"). Never in general waste.
-- **Batteries, bulbs** — collection points in supermarkets and DIY stores.
-- **Bulky items / furniture (dead)** — council bulky-waste collection (usually a
-  small fee) or the HWRC.
-- **Textiles (worn/damaged)** — textile banks and many charity shops take
-  rag-grade for recycling.
-- **Household hazardous waste** (paint, solvents, chemicals) — HWRC hazardous
-  section. Never down the drain or in general waste.
+- **Collection only** by default (cash, meet locally) or postage for smaller
+  items. State which.
+- Honest condition; note defects and whether electricals work.
+- Furniture must have **fire safety labels** to resell/donate — mention if
+  present.
+- Dimensions for furniture, size for clothing, working status for electricals.
+- Expect "is this still available?" messages — that's normal.
+
+## Example block
+
+```
+TITLE: Solid Oak Coffee Table - 110x60 cm - Good Condition
+PRICE: £55 (range: £40–£75) ONO
+PLATFORM: Facebook Marketplace — local, free, big reach
+CATEGORY: Furniture > Tables
+
+Solid oak coffee table, 110x60x45 cm. A few light surface scratches on top
+(see photos), sturdy frame. Selling due to a house move.
+Collection only, cash.
+
+Handover: collection, Manchester M20
+```

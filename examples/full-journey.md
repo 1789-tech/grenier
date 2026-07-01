@@ -9,7 +9,7 @@ The 3 Skills chain together: **sort → decide → draft the listing.**
 Claude frames it: one shelf, 20 min on the clock, 4 destinations. Result: "18
 pieces, 1 pile to sell (6), 1 bag to donate (9), 3 to recycle."
 
-## 2. Decide — `sell`
+## 2. Decide — `offload`
 
 > "In the sell pile: a leather jacket, 2 pairs of sneakers, a designer handbag."
 
@@ -18,7 +18,7 @@ Claude detects the country and arbitrates (UK recipe, `countries/uk.md`):
 - Recent sneakers → *Vinted* too; the worn ones → textile bank.
 - The "donate" bag → *charity shop / Freegle* so it's gone this week.
 
-## 3. Draft — `listing`
+## 3. Draft — `sell`
 
 > "Write the ad for the leather jacket. Women's, size 10, black, lambskin,
 > like-new, worn a few times."

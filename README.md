@@ -21,8 +21,8 @@ The agentic parts (photo vision, price scraping, tracking) come next.
 | Skill | Level | Status |
 |-------|-------|--------|
 | [`declutter`](skills/declutter/) | 1 · Sorting coach | ✅ v0 |
-| [`sell`](skills/sell/) | 2 · What to do with it | ✅ v0 |
-| [`listing`](skills/listing/) | 3 · Draft the ad | ✅ v0 |
+| [`offload`](skills/offload/) | 2 · What to do with it | ✅ v0 |
+| [`sell`](skills/sell/) | 3 · Draft the ad | ✅ v0 |
 | `sale-tracker` | 4 · Follow-up | 🔭 later |
 
 The first three chain together: **sort → decide → draft the listing.** See
@@ -31,7 +31,7 @@ The first three chain together: **sort → decide → draft the listing.** See
 ## Works anywhere
 
 The Skills are written in **English** and country-agnostic at their core. The
-`sell` and `listing` Skills load a small **local recipe** for your country —
+`offload` and `sell` Skills load a small **local recipe** for your country —
 which marketplaces, donation networks, recycling routes and listing conventions
 apply where you live.
 
@@ -73,14 +73,14 @@ No coding needed. If you can chat with Claude, you can use grenier. Try:
 |----------|---------------------|
 | "My garage is a total mess and I don't know where to start." | `declutter` |
 | "Help me sort my bedroom, I've got 20 minutes." | `declutter` |
-| "I've got an old bike, a box of novels and a broken printer to get rid of." | `sell` |
-| "Where do I sell or donate this old sofa?" | `sell` |
-| "I'm in the US — what do I do with a bunch of furniture I don't want?" | `sell` (US recipe) |
-| "UK here — I've got dead electronics and e-waste to deal with." | `sell` (UK recipe) |
-| "Write me the ad for my bike: Trek FX 2, size M, good condition." | `listing` |
-| "Draft a listing for this coffee table." *(paste a photo)* | `listing` |
-| "What do I even do with this single weird item?" | `sell` |
-| "Turn my box of 40 books into the simplest possible outcome." | `sell` → `listing` |
+| "I've got an old bike, a box of novels and a broken printer to get rid of." | `offload` |
+| "Where do I sell or donate this old sofa?" | `offload` |
+| "I'm in the US — what do I do with a bunch of furniture I don't want?" | `offload` (US recipe) |
+| "UK here — I've got dead electronics and e-waste to deal with." | `offload` (UK recipe) |
+| "Write me the ad for my bike: Trek FX 2, size M, good condition." | `sell` |
+| "Draft a listing for this coffee table." *(paste a photo)* | `sell` |
+| "What do I even do with this single weird item?" | `offload` |
+| "Turn my box of 40 books into the simplest possible outcome." | `offload` → `sell` |
 
 ## Contributing
 

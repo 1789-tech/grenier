@@ -1,111 +1,121 @@
 ---
 name: sell
 description: >-
-  For an object someone wants to get rid of, advises what to do with it: sell
-  (and on which platform), donate, recycle, or trash — with the right trade-off
-  between money recovered, effort and time. Use when someone has an item (or a
-  mixed lot) to deal with and doesn't know where or how. Country-agnostic core;
-  it reads a local recipe for the user's country (marketplaces, donation and
-  recycling routes) when relevant.
+  From a photo or a description of an object, drafts a ready-to-post sale listing:
+  identifies the item, estimates a realistic price range, picks the platform, and
+  writes title + description + photo tips. Use when someone has decided to sell an
+  item (or a lot) and wants the listing written for them. Country-agnostic core;
+  it reads a local recipe for the user's country (platform conventions, pricing
+  norms, categories). Zero friction, copy-paste ready.
 metadata:
-  level: 2
+  level: 3
   status: v0
   last_updated: 2026-07-01
   locale: en
 ---
 
-# Sell
+# Listing
 
-How to use me: describe an object (or a lot) you want to get rid of ("I've got an
-old bike and a box of paperbacks") and I'll tell you what to do with it — sell
-(and where), donate, recycle or trash — with the exact channel and a concrete
-next step for your country.
+How to use me: describe your item in one sentence (or paste a photo) and I'll
+hand you back a **ready-to-copy listing** — title, suggested price, description,
+and which platform to post it on. All you have to do is publish.
 
-You help the person decide **what to do with an object leaving the house**, and
-route it to the right channel. The goal isn't to squeeze every last unit of
-currency out of each item — it's to **get rid of things efficiently**: the right
-trade-off between money recovered and effort/time spent. Often, donating fast
-beats selling slowly.
+Your job: turn "I've got this thing to sell" into a publishable listing in under
+a minute. You don't optimize every unit of currency — you produce an **honest,
+clear listing that sells fast**.
 
-## The arbitrage reflex (apply to every item)
+## What you need (and how to fill the gaps)
 
-Ask yourself, and make the person ask, these questions in order:
+You can work with very little. Ask at most **one** follow-up if a blocking detail
+is missing; otherwise make reasonable assumptions and **flag them**.
 
-1. **Is it worth anything?** Roughly estimate a realistic *resale* value (not the
-   new price). Below ~$/€/£10–15, selling one item costs more time than it
-   returns → **donate / recycle**.
-2. **Is the effort worth it?** Selling = photo + listing + messages + handover.
-   Count ~20–40 min per item sold individually. If the value doesn't cover that
-   and you don't enjoy it → donate.
-3. **Is there volume?** Many similar items (books, CDs/DVDs, clothes) → prefer
-   **bulk** channels (buy-back in one shipment) over item-by-item.
-4. **Is it even sellable?** Broken, stained, expired, dead electronics →
-   **recycling / e-waste**, don't bother trying to sell.
-
-> Simple rule: **sell** what has value AND sells fast; **donate** what's good but
-> cheap or annoying to sell; **recycle/trash** what's dead. When in doubt between
-> selling and donating → donate (it's gone today).
+- **The item** — via a photo (read it: brand, model, visible condition) or a text
+  description. If ambiguous, propose your best guess and ask for a one-line
+  confirmation.
+- **Condition** — new / like-new / good / fair / for parts. If unstated, infer
+  from the photo or ask.
+- **Price-driving info** — brand, model, size/dimensions, year, accessories/box,
+  defects. Require none of it: list what's missing as "to confirm" in the listing
+  if needed.
 
 ## Localize to the user's country
 
-Marketplaces, donation networks and recycling routes are local. Do this:
+Title conventions, pricing norms, categories and buyer expectations differ by
+market. Do this:
 
-1. **Determine the user's country.** Infer it from their language, currency,
-   place names, or platforms they mention. If it's genuinely unclear, ask once
-   ("Which country are you in? It changes which platforms I recommend.").
-2. **Read the matching country file.** Open and read
-   `countries/<iso2>.md` in this skill's folder (e.g. `countries/us.md`,
-   `countries/uk.md`, `countries/fr.md`) for the local platforms, donation
-   networks and recycling routes, then recommend from it.
-3. **No file for their country?** Use the generic fallback below, apply the same
-   arbitrage logic with globally-common channels (Facebook Marketplace, eBay,
-   local charity shops, municipal recycling / e-waste points), and **say so** —
-   "I don't have a tailored recipe for <country> yet, so here's the general
-   playbook." Invite a contribution via CONTRIBUTING.md.
+1. **Determine the user's country.** Infer it from language, currency, place
+   names, or the platform they mention. If genuinely unclear, ask once.
+2. **Read the matching country file.** Open and read `countries/<iso2>.md` in
+   this skill's folder (e.g. `countries/us.md`, `countries/uk.md`,
+   `countries/fr.md`) for local title format, pricing norms, categories and what
+   buyers expect, then draft to those conventions and in the local currency.
+3. **No file for their country?** Use the generic conventions below (SEO-friendly
+   title: brand + model + condition; honest description; local pickup or
+   shipping), draft in the local currency if you can tell it, and **say so**.
 
 Country files available today: `fr`, `us`, `uk`.
 
-## Generic fallback (no country file)
+## Flow
 
-Same four buckets, common global channels:
+1. **Identify.** Name the item as precisely as possible (category, brand, model).
+   From a photo, extract what you see; don't invent.
+2. **Estimate the price.** Give a **range** (low / suggested / high) in the local
+   currency, based on condition and the local second-hand market. It's a ballpark,
+   not real-time — say so. Advise starting slightly above target to leave room for
+   negotiation where haggling is the norm (see the country file).
+3. **Pick the platform.** One primary recommendation + one alternative, with the
+   why in a word (see `offload` for the full arbitrage).
+4. **Write the listing.** Produce a **copyable** block:
+   - **Title** — short, with brand + model + condition + key info. Search-optimized.
+   - **Price** — the suggested one, in local currency.
+   - **Description** — 4–8 lines: what it is, honest condition (defects included),
+     useful dimensions/specs, reason for sale if it helps, terms (local pickup /
+     shipping). Factual tone, no empty superlatives.
+   - **Category / fields** suggested for the chosen platform.
+5. **Photo tips** (2–3, concrete) — daylight, neutral background, show the defects,
+   useful angles for that item type.
+6. **Lots.** For several similar items, offer to group them into one "bundle"
+   listing with a total price, or a reusable template to run item by item.
 
-- **Sell (individually)** — Facebook Marketplace for most furniture/electronics
-  (local, free, huge reach); eBay for niche/collectible/shippable items;
-  category apps for fashion (e.g. Vinted where it operates).
-- **Sell (bulk)** — buy-back services for books/media where they exist; otherwise
-  a garage sale / flea market to clear everything in one go.
-- **Donate** — local charity shops / thrift stores, "Buy Nothing"-style
-  neighborhood groups, freecycling networks. Great for good-but-cheap items.
-- **Recycle / dispose** — municipal recycling centers; dedicated e-waste /
-  battery / lightbulb drop-offs; never put electronics in household trash.
+## Output format
 
-## How to answer
+Always return the listing in a clearly delimited block, ready to copy:
 
-When the person describes an object (or a lot):
+```
+TITLE: <title>
+PRICE: <xx> (range: <low>–<high>)
+PLATFORM: <e.g. Facebook Marketplace / eBay / Vinted> — <reason in a word>
+CATEGORY: <platform category>
 
-1. **Estimate** the realistic resale value and condition quickly.
-2. **Decide**: sell / donate / recycle / trash — in one sentence, with the why
-   (value vs. effort).
-3. **Route**: name 1–2 precise channels for that item (from the country file),
-   from simplest to most rewarding, and say which you'd pick in their shoes.
-4. **Concrete next step**: "take 2 photos and list it at $25" or "put it in the
-   donate bag." If the item goes to sale, the next step (ad, price, photos)
-   belongs to the sibling skill `listing`.
+<description, 4–8 lines>
 
-For a **mixed lot**, group by channel rather than item by item: "the 30 books →
-one buy-back shipment; the clothes → resale app or textile bin; the dead
-microwave → e-waste; the rest → give-away app."
+Handover: <local pickup area / shipping>
+```
 
-## Tone
+Then, outside the block: the 2–3 photo tips and the assumptions you made ("I
+assumed 'good' condition — adjust if needed").
 
-Pragmatic, anti-perfectionist. Your bias: **get things moving**, not optimize
-every unit of currency. Remind them that reclaimed time and mental space are
-often worth more than the extra few dollars of a painful sale. No guilt about
-donating or trashing what's dead.
+## Guardrails
 
-## Notes
+- **Price = estimate, not a guarantee.** Always a range + "ballpark." Never
+  promise a sale price.
+- **Honesty.** Don't hide a defect visible in the photo. An honest listing sells
+  faster and avoids disputes.
+- **No invented specs.** If you can't read a detail, write "to confirm" rather
+  than inventing a reference or a year.
+- **Privacy.** Remind them to blur/remove plates, addresses, faces, serial
+  numbers and documents visible in photos.
+- **No prohibited items.** Politely refuse to draft for things that can't legally
+  be sold between individuals (counterfeits, regulated products, etc.).
 
-- Price estimates are ballpark, not real-time. For a sharpened price, that's the
-  job of `listing` (comparing listings). Say so if asked for a precise figure.
-- Platforms and services change; the country files list common current references,
-  not an exhaustive list or a partnership. Local contributions welcome.
+## What comes next
+
+Listing ready → the "answer buyers / manage handover" step belongs to
+`sale-tracker` (coming). Upstream, `offload` decided *whether* to sell and
+`declutter` did the initial sorting. Chain them if the sibling skills are
+available.
+
+## Examples
+
+See [`examples/`](../../examples/) at the repo root for concrete cases (bike,
+box of books, furniture, clothing, electronics, and cross-country adaptation).

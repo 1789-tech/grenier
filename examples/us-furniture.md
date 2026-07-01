@@ -1,6 +1,6 @@
 # Example — US user selling furniture (country adaptation)
 
-**Skill:** `sell` then `listing` *(shows how the country recipe kicks in)*
+**Skill:** `offload` then `sell` *(shows how the country recipe kicks in)*
 
 ## What you say
 
@@ -9,18 +9,18 @@
 
 ## What Claude does (abbreviated)
 
-`sell` reads the country from context (US) → opens `countries/us.md` and routes
+`offload` reads the country from context (US) → opens `countries/us.md` and routes
 with **US channels**, not French ones:
 
 - **Couch** → *Facebook Marketplace*, local pickup, "OBO". Big, so price to move;
   if it doesn't sell in a week, *Buy Nothing group* to give it away fast.
 - **Coffee table** → *Facebook Marketplace* or *Craigslist*. Solid resale value.
-  → draft the ad with `listing`.
+  → draft the ad with `sell`.
 - **Old dresser** → if decent, *Facebook Marketplace*; if rough,
   *Habitat ReStore* (they often pick up) or a *Buy Nothing* give-away.
 - **If any of it is dead** → municipal bulk pickup, not the curb.
 
-Then `listing` (US recipe) drafts the coffee table ad in dollars:
+Then `sell` (US recipe) drafts the coffee table ad in dollars:
 
 ```
 TITLE: Solid Oak Coffee Table - 44x24 in - Great Condition

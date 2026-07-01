@@ -1,46 +1,47 @@
-# Sell — France (fr)
+# Listing — France (fr)
 
-Currency: € · Language: French. Default to local pickup ("remise en main propre")
-where possible — no fees, fast.
+Currency: € · Language: French. Write the listing in French.
 
-## Sell — individually
+## Title format
 
-| Channel | Best for | Notes |
-|---------|----------|-------|
-| **Leboncoin** | Furniture, appliances, decor, tech, bikes, tools, baby gear | The default for most items > 15 €. Local pickup or shipping. |
-| **Vinted** | Clothes, shoes, bags, accessories; increasingly home/books/games | Buyer pays fees, easy shipping. |
-| **eBay** | Collectibles, rare parts, niche tech, buyers outside France | Wider reach, shipping. |
-| **Vide-greniers / brocante** | High volume of small, cheap items at once | Clear everything in one day without listing each. |
-| **Specialized** | Refurb tech (Back Market), instruments (Zikinf), luxury/watches (Vestiaire Collective), design furniture (Selency) | Niche audiences, better prices for the right item. |
+- Pattern: **Marque + Modèle + info clé + état**.
+  e.g. `Vélo de ville Btwin Elops 520 - Taille M - Bon état`.
+- Include searchable keywords buyers actually type. No emojis, no ALL CAPS.
 
-## Sell — in bulk (volume, minimal effort)
+## Pricing norms
 
-- **Books** → **Momox / RecycLivre / Gibert (buy-back)**: scan the ISBNs, they
-  buy and pay shipping. Low per-item price, zero friction; RecycLivre is
-  solidarity-focused.
-- **CDs / DVDs / games / consoles** → Momox, Easy Cash, Cash Converters.
-- **Clothes in bulk** → Vinted "dressing", or donation (below), or textile
-  buy-back bins (Patatam).
+- Haggling is expected on **Leboncoin**. Start ~10–15% above your target so
+  there's room to come down.
+- On **Vinted**, buyers use "offres" — price a touch high, accept a reasonable
+  counter.
+- Round to clean numbers (25 €, 40 €, not 37 €).
 
-## Donate
+## Categories (by platform)
 
-- **Emmaüs** — furniture, appliances, dishes, clothes, books. Some branches
-  collect large volumes at home. The reflex for emptying fast and usefully.
-- **Geev** — peer-to-peer giving app: post a photo, someone comes to collect.
-  Unbeatable for moving low-market-value-but-still-useful things fast.
-- **Donnons.org** — peer-to-peer giving, no app.
-- **Local associations** — Croix-Rouge, Secours Populaire, Restos du Cœur (by
-  item), neighborhood ressourceries / recycleries.
+- **Leboncoin** — pick the closest native category (Mobilier, Électroménager,
+  Vélos, Informatique, Vêtements, Puériculture…). Fill "état" and location.
+- **Vinted** — category + brand + size + condition are mandatory-ish; fill them,
+  they drive discovery.
 
-## Recycle / dispose (correctly)
+## What buyers expect
 
-- **Déchèterie** — rubble, bulky waste, wood, metals, garden waste.
-- **Appliances & electronics (DEEE)** — taken back in-store on purchase (1-for-1)
-  or at the déchèterie; ecosystem drop-off points. Never in the trash.
-- **Batteries, bulbs, cartridges** — bins in supermarkets / DIY stores.
-- **Worn/damaged textiles** (not donatable) — Le Relais / Refashion bins:
-  recycled into rags/insulation even with holes.
-- **Medicines** — pharmacy (Cyclamed). **Paints/solvents/chemicals** — déchèterie
-  hazardous-waste section. Never down the drain or in the trash.
-- **Bulky items ("encombrants")** — municipal collection by appointment in many
-  towns.
+- **Remise en main propre** by default (no fees, meet locally) or shipping via
+  Mondial Relay / Colissimo. State which.
+- Honest condition with visible defects mentioned — French buyers ping fast on
+  hidden flaws.
+- Dimensions for furniture, size for clothes, working status for electronics.
+
+## Example block
+
+```
+TITRE : Table basse chêne massif - 110x60 cm - Bon état
+PRIX : 60 € (fourchette : 45–80 €)
+PLATEFORME : Leboncoin — local, remise en main propre, pas de frais
+CATÉGORIE : Ameublement > Tables
+
+Table basse en chêne massif, 110x60x45 cm. Quelques micro-rayures sur le
+plateau (photos), structure solide. Vente cause déménagement.
+Remise en main propre uniquement.
+
+Remise : main propre secteur Lyon 3e
+```

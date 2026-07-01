@@ -51,8 +51,8 @@ To add your country:
    `de`, `es`, `ca`, `au`…).
 2. Follow the shape of the existing files (`fr.md`, `us.md`, `uk.md`): concise,
    scannable, tables/bullets, honest. Include the local currency and language.
-3. For `sell`: where to sell / donate / recycle by item type.
-   For `listing`: title format, pricing norms, categories, what buyers expect,
+3. For `offload`: where to sell / donate / recycle by item type.
+   For `sell`: title format, pricing norms, categories, what buyers expect,
    and one example block.
 4. The `SKILL.md` already tells Claude to read `countries/<iso2>.md` when it
    detects that country — no core change needed.

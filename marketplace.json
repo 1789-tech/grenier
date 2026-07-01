@@ -19,20 +19,20 @@
       "description": "Coaches you step by step to declutter: one zone, one short slot, four destinations, zero 'maybe'."
     },
     {
-      "name": "sell",
-      "path": "skills/sell",
+      "name": "offload",
+      "path": "skills/offload",
       "level": 2,
       "status": "v0",
-      "title": "What to do with it",
+      "title": "Offload — what to do with it",
       "description": "For an item to deal with: sell (and where), donate, recycle or trash — value/effort trade-off and channels for your country.",
       "countries": ["fr", "us", "uk"]
     },
     {
-      "name": "listing",
-      "path": "skills/listing",
+      "name": "sell",
+      "path": "skills/sell",
       "level": 3,
       "status": "v0",
-      "title": "Draft the listing",
+      "title": "Sell — draft the listing",
       "description": "From a photo or description to a ready-to-post listing: identification, price, platform, title and description, tuned to your country.",
       "countries": ["fr", "us", "uk"]
     }

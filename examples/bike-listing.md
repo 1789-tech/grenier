@@ -1,6 +1,6 @@
 # Example — drafting a bike ad
 
-**Skill:** `listing`
+**Skill:** `sell`
 
 ## What you say
 

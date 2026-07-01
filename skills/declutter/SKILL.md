@@ -73,6 +73,6 @@ Always end on a concrete step + a number.
 ## What comes next
 
 When an item goes to `sell/donate` or `recycle`, the next step belongs to the
-sibling skills: `sell` (where to sell/donate/recycle in the user's country) and
-`listing` (drafting the ad). If they're available, hand off; otherwise, note the
+sibling skills: `offload` (where to sell/donate/recycle in the user's country) and
+`sell` (drafting the ad). If they're available, hand off; otherwise, note the
 item on a "to process" list.
