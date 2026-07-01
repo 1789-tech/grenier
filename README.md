@@ -29,9 +29,39 @@ viennent ensuite.
 
 ## Utilisation
 
-Ces Skills suivent le format [Claude Agent Skills](https://docs.claude.com).
-Pointe Claude Code (ou tout harnais compatible Skills) sur ce repo, ou copie un
-dossier de `skills/` dans ton propre `.claude/skills/`.
+Ces Skills suivent le format [Claude Agent Skills](https://docs.claude.com). Deux
+façons de démarrer :
+
+**Option A — copier une Skill (le plus simple)**
+
+```bash
+git clone https://github.com/1789-tech/grenier
+cp -r grenier/skills/declutter-coach ~/.claude/skills/
+```
+
+Relance Claude Code, puis lance-toi — pas besoin de commande spéciale, décris ta
+situation et la Skill se déclenche toute seule :
+
+> « J'ai un garage bordélique et je sais pas par où commencer. »
+> → `declutter-coach` prend la main : une zone, un créneau de 15 min, on trie.
+
+> « J'ai un vieux vélo, un carton de romans et une imprimante à me débarrasser. »
+> → `where-to-sell-fr` arbitre pour chaque objet : vendre (et où), donner,
+> recycler ou jeter.
+
+**Option B — pointer sur le repo**
+
+Ouvre Claude Code (ou tout harnais compatible Skills) dans le dossier `grenier/`
+cloné : les Skills du dossier `skills/` sont disponibles directement.
+
+### Les Skills en un coup d'œil
+
+| Tu veux… | Dis quelque chose comme… | Skill |
+|----------|--------------------------|-------|
+| T'attaquer au bazar sans stress | « aide-moi à trier ma chambre » | `declutter-coach` |
+| Savoir quoi faire d'un objet | « où je revends / donne ça ? » | `where-to-sell-fr` |
+
+Pas besoin de coder. Si tu sais discuter avec Claude, tu sais utiliser grenier.
 
 ## Licence
 
