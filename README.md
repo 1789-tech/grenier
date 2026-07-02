@@ -42,9 +42,13 @@ falls back to sensible global guidance and tells you so.
 ## Install
 
 These Skills follow the [Claude Agent Skills](https://docs.claude.com) format.
+Pick whichever door you like — they all end with the same three Skills in
+`~/.claude/skills/`.
 
-**Easiest — let your agent install them (no clone).** Paste this into
-[Claude Code](https://claude.com/claude-code) (or any Skills-compatible agent):
+### Door 1 — just ask your agent (no clone, no commands)
+
+Paste this into [Claude Code](https://claude.com/claude-code) (or any
+Skills-compatible agent):
 
 ```
 Install the grenier skills from https://github.com/1789-tech/grenier
@@ -52,18 +56,42 @@ into ~/.claude/skills/, then help me start decluttering.
 ```
 
 The agent fetches the `skills/` folder, drops each Skill into `~/.claude/skills/`,
-and you're ready. Restart Claude Code and just describe your situation — the right
-Skill triggers itself. No commands to memorize.
+and you're ready. This is the easiest path if you're already chatting with Claude.
 
-**By hand (if you prefer):**
+### Door 2 — native plugin (Claude Code marketplace)
+
+grenier is a Claude Code **plugin**. Add the marketplace once, then install:
+
+```
+/plugin marketplace add 1789-tech/grenier
+/plugin install grenier@grenier
+```
+
+Claude Code handles updates and keeps the Skills in sync with the repo. This is
+the recommended path for Claude Code users.
+
+### Door 3 — one-line install script (`curl | sh`)
+
+For terminals and CI, a small, inspectable, idempotent installer:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/1789-tech/grenier/main/install.sh | sh
+```
+
+It clones this repo (or downloads the tarball if you have no `git`) and copies the
+three Skills into `~/.claude/skills/`. Override the target with
+`CLAUDE_SKILLS_DIR=/path sh install.sh`. Read [`install.sh`](install.sh) first —
+it's ~40 lines and does nothing surprising.
+
+**By hand, if you prefer:**
 
 ```bash
 git clone https://github.com/1789-tech/grenier
 cp -r grenier/skills/* ~/.claude/skills/
 ```
 
-**Or point Claude at the repo:** open Claude Code inside the cloned `grenier/`
-folder and the Skills in `skills/` are available directly.
+Or just open Claude Code inside the cloned `grenier/` folder — the Skills in
+`skills/` are available directly.
 
 ## Say something like…
 
