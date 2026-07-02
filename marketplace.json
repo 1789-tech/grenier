@@ -1,0 +1,43 @@
+{
+  "name": "grenier",
+  "description": "Claude Skills pour désencombrer, vendre, donner, recycler et négocier ses objets en France.",
+  "version": "0.1.0",
+  "author": "1789-tech",
+  "license": "MIT",
+  "language": "fr",
+  "country": "FR",
+  "skills": [
+    {
+      "slug": "declutter-coach",
+      "name": "Coach de tri",
+      "path": "skills/declutter-coach/SKILL.md",
+      "level": 1,
+      "status": "v0",
+      "description": "Session de désencombrement guidée, décisions objet par objet, micro-actions de 15 minutes."
+    },
+    {
+      "slug": "where-to-sell-fr",
+      "name": "Conseiller sortie d'objet France",
+      "path": "skills/where-to-sell-fr/SKILL.md",
+      "level": 2,
+      "status": "v0",
+      "description": "Route un objet vers vendre, donner, recycler ou jeter avec les plateformes et filières françaises."
+    },
+    {
+      "slug": "listing-drafter",
+      "name": "Assistant d'annonce",
+      "path": "skills/listing-drafter/SKILL.md",
+      "level": 3,
+      "status": "v0",
+      "description": "Prépare titre, prix, photos, description et logistique pour Leboncoin, Vinted ou eBay."
+    },
+    {
+      "slug": "haggle",
+      "name": "Assistant négociation",
+      "path": "skills/haggle/SKILL.md",
+      "level": 4,
+      "status": "v0",
+      "description": "Aide à répondre aux acheteurs, contre-offres, réservations, no-shows et messages pénibles."
+    }
+  ]
+}

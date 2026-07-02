@@ -88,8 +88,9 @@ Quand la personne décrit un objet (ou un lot) :
 3. **Route** : nomme 1–2 canaux précis adaptés à cet objet, du plus simple au plus
    rémunérateur, et dis lequel tu choisirais à sa place.
 4. **Prochaine étape concrète** : « prends 2 photos et liste sur Leboncoin à 25 € »
-   ou « mets-le dans le sac Geev ». Si l'objet part en vente, la suite (annonce,
-   prix, photos) relève de la Skill sœur `listing-drafter`.
+   ou « mets-le dans le sac Geev ». Si l'objet part en vente, passe explicitement
+   la main à `listing-drafter` pour le titre, le prix, les photos et l'annonce.
+   Une fois l'annonce publiée, les messages d'acheteurs relèvent de `haggle`.
 
 Pour un **lot mélangé**, regroupe par canal plutôt que objet par objet : « les 30
 livres → Momox en un envoi ; les fringues → Vinted ou borne ; le micro-ondes HS →

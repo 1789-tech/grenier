@@ -1,0 +1,22 @@
+{
+  "name": "grenier",
+  "description": "Claude Skills pour désencombrer, vendre, donner, recycler et négocier ses objets en France.",
+  "owner": {
+    "name": "1789"
+  },
+  "plugins": [
+    {
+      "name": "grenier",
+      "displayName": "grenier",
+      "description": "Claude Skills pour désencombrer, vendre, donner, recycler et négocier ses objets en France.",
+      "source": "./",
+      "skills": "./skills/",
+      "strict": false,
+      "repository": "https://github.com/1789-tech/grenier",
+      "homepage": "https://grenier.1789.tech",
+      "license": "MIT",
+      "keywords": ["decluttering", "resale", "france", "skills"],
+      "category": "productivity"
+    }
+  ]
+}

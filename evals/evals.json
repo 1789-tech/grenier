@@ -1,0 +1,60 @@
+{
+  "cases": [
+    {
+      "id": "declutter-garage-overwhelmed",
+      "skill": "declutter-coach",
+      "prompt": "Mon garage est plein, je suis bloque et j'ai seulement 20 minutes.",
+      "must_include": ["15 minutes", "zone", "garder", "vendre/donner", "recycler", "jeter"],
+      "must_avoid": ["toute la maison"]
+    },
+    {
+      "id": "declutter-sentimental",
+      "skill": "declutter-coach",
+      "prompt": "Je garde trop de souvenirs d'enfance et je culpabilise a l'idee de jeter.",
+      "must_include": ["photo", "boite", "quota", "culpabilite"],
+      "must_avoid": ["culpabilise"]
+    },
+    {
+      "id": "where-to-sell-mixed-lot",
+      "skill": "where-to-sell-fr",
+      "prompt": "J'ai 30 romans, un micro-ondes HS et trois sacs de vetements a faire partir.",
+      "must_include": ["momox", "déchèterie", "vinted", "donner", "lot"],
+      "must_avoid": ["un par un"]
+    },
+    {
+      "id": "where-to-sell-low-value",
+      "skill": "where-to-sell-fr",
+      "prompt": "J'ai une lampe Ikea correcte mais qui vaut peut-etre 8 euros.",
+      "must_include": ["donner", "geev", "effort", "10"],
+      "must_avoid": ["maximiser"]
+    },
+    {
+      "id": "listing-bike",
+      "skill": "listing-drafter",
+      "prompt": "Redige une annonce Leboncoin pour un velo enfant Decathlon 20 pouces, bon etat, quelques rayures, a Nantes.",
+      "must_include": ["titre", "prix", "photos", "etat", "remise en main propre"],
+      "must_avoid": ["comme neuf"]
+    },
+    {
+      "id": "listing-clothes-bundle",
+      "skill": "listing-drafter",
+      "prompt": "Fais une annonce Vinted pour un lot de 6 bodies bebe taille 6 mois, propres, deux ont de petites taches.",
+      "must_include": ["lot", "taille", "defaut", "envoi", "prix"],
+      "must_avoid": ["parfait"]
+    },
+    {
+      "id": "haggle-lowball",
+      "skill": "haggle",
+      "prompt": "J'ai mis une commode a 80 euros, l'acheteur propose 30 euros sec. Reponds.",
+      "must_include": ["merci", "60", "remise en main propre", "poli"],
+      "must_avoid": ["agressif"]
+    },
+    {
+      "id": "haggle-no-show",
+      "skill": "haggle",
+      "prompt": "Quelqu'un n'est pas venu au rendez-vous pour recuperer une chaise. Je veux relancer sans perdre ma soiree.",
+      "must_include": ["creneau", "confirmation", "reserve", "prochain"],
+      "must_avoid": ["insulte"]
+    }
+  ]
+}
