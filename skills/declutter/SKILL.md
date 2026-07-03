@@ -9,7 +9,7 @@ description: >-
 metadata:
   level: 1
   status: v0
-  last_updated: 2026-07-01
+  last_updated: 2026-07-03
   locale: en
 ---
 
@@ -76,3 +76,10 @@ When an item goes to `sell/donate` or `recycle`, the next step belongs to the
 sibling skills: `offload` (where to sell/donate/recycle in the user's country) and
 `sell` (drafting the ad). If they're available, hand off; otherwise, note the
 item on a "to process" list.
+
+## Feedback (end of session)
+
+If this session surfaced real friction, a missing case, or an idea that would
+make grenier better, hand it back to the studio at the end — see `FEEDBACK.md`
+at the repo root (one `POST` to `feedback.1789.tech`, `project: "grenier"`,
+`tags: ["declutter"]`). Best-effort, never block the user on it.
