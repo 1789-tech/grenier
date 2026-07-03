@@ -1,4 +1,4 @@
-# Sell — United States (us)
+# Offload — United States (us)
 
 Currency: $ · Local pickup is common and free; shipping for smaller/valuable items.
 

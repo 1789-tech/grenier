@@ -1,4 +1,4 @@
-# Sell — France (fr)
+# Offload — France (fr)
 
 Currency: € · Language: French. Default to local pickup ("remise en main propre")
 where possible — no fees, fast.

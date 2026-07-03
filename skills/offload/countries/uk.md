@@ -1,4 +1,4 @@
-# Sell — United Kingdom (uk)
+# Offload — United Kingdom (uk)
 
 Currency: £ · Local collection is common and free; shipping for smaller/valuable
 items. "Collection only" is a normal listing term.
