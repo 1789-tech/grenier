@@ -1,7 +1,7 @@
 {
   "name": "grenier",
   "version": "0.1.0",
-  "description": "Declutter your home and turn clutter into things sold, donated or recycled: sort it, decide what to do with each thing, then draft the listing. English core with local marketplace recipes for France, the US and the UK.",
+  "description": "Declutter your home and turn clutter into things sold, donated or recycled: sort it, decide what to do with each thing, price the one best move, then draft the listing. English core with local marketplace recipes for France, the US and the UK.",
   "author": {
     "name": "1789",
     "url": "https://1789.tech"
@@ -12,6 +12,7 @@
   "keywords": [
     "declutter",
     "resale",
+    "pricing",
     "recycling",
     "donate",
     "secondhand",

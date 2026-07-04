@@ -1,6 +1,6 @@
 # Example — the full journey, end to end
 
-The 3 Skills chain together: **sort → decide → draft the listing.**
+The Skills chain together: **sort → decide route → price/one move → draft the listing.**
 
 ## 1. Sort — `declutter`
 
@@ -18,7 +18,15 @@ Claude detects the country and arbitrates (UK recipe, `countries/uk.md`):
 - Recent sneakers → *Vinted* too; the worn ones → textile bank.
 - The "donate" bag → *charity shop / Freegle* so it's gone this week.
 
-## 3. Draft — `sell`
+## 3. Price — `price-and-decide`
+
+> "Balanced outcome: what price and one move for the leather jacket?"
+
+Claude keeps the decision compact: "list at £70 on Vinted, accept £60+ if it
+moves this week; no second option needed." It does not turn the jacket into a
+multi-platform research project.
+
+## 4. Draft — `sell`
 
 > "Write the ad for the leather jacket. Women's, size 10, black, lambskin,
 > like-new, worn a few times."
@@ -30,5 +38,5 @@ PLATFORM: Vinted — women's fashion, audience + postage
 ...
 ```
 
-In three messages you went from a jumbled closet to a publishable listing —
+In four messages you went from a jumbled closet to a publishable listing —
 without ever typing a command. Prices are illustrative.

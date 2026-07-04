@@ -5,14 +5,14 @@
     "url": "https://1789.tech"
   },
   "metadata": {
-    "description": "grenier — declutter & resell. A collection of Claude Skills to sort your home and turn clutter into things sold, donated or recycled, with local marketplace recipes per country.",
+    "description": "grenier — declutter & resell. A collection of Claude Skills to sort your home and turn clutter into things sold, donated or recycled, price the one best move, and draft listings with local recipes per country.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "grenier",
       "source": "./",
-      "description": "Sort your home, decide what to do with each thing (sell / donate / recycle / trash), and draft the listing. Chains three Skills: declutter -> offload -> sell. English core with FR/US/UK marketplace recipes.",
+      "description": "Sort your home, decide what to do with each thing (sell / donate / recycle / trash), price the one best move, and draft the listing. Chains Skills: declutter -> offload -> price-and-decide -> sell. English core with FR/US/UK marketplace recipes.",
       "version": "0.1.0",
       "homepage": "https://grenier.1789.tech",
       "license": "MIT",
@@ -20,6 +20,7 @@
       "keywords": [
         "declutter",
         "resale",
+        "pricing",
         "recycling",
         "donate",
         "secondhand"

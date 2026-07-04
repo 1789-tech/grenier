@@ -2,7 +2,7 @@
 # grenier installer — copies the grenier Skills into your Claude skills dir.
 #
 # Inspect this script before you run it. It does exactly one thing: fetch this
-# repo's `skills/` folder and copy the three Skills into ~/.claude/skills/.
+# repo's `skills/` folder and copy the Skills into ~/.claude/skills/.
 # No sudo, no network calls beyond the clone/tarball, no state left behind.
 #
 # Usage:
@@ -16,7 +16,7 @@ set -eu
 
 REPO="https://github.com/1789-tech/grenier"
 DEST="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
-SKILLS="declutter offload sell"
+SKILLS="declutter offload price-and-decide sell"
 
 printf 'grenier → installing skills into: %s\n' "$DEST"
 mkdir -p "$DEST"
@@ -57,6 +57,7 @@ your situation — the right Skill triggers itself:
 
   "my garage is a mess and I don't know where to start"
   "where do I sell or donate this old sofa?"
+  "what price should I list this bike at, or should I just donate it?"
   "write me the ad for my bike, Trek FX 2, size M"
 
 happy decluttering. — grenier · https://grenier.1789.tech
