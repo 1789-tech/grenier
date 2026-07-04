@@ -9,9 +9,11 @@
 1. **Sort** — a method, exercises, steps and techniques to take on the clutter.
 2. **Decide what to do with each thing** — sell (and where), donate, recycle, or
    trash — with the right effort/value trade-off.
-3. **Prepare the sale** — from a photo or a line of text: identify the item,
+3. **Price the decision** — estimate realistic resale value, bundle when useful,
+   and decide whether selling is worth the hassle.
+4. **Prepare the sale** — from a photo or a line of text: identify the item,
    suggest a price, write the listing, bundle lots.
-4. **Track the sale** — answer buyers, handle logistics (coming later).
+5. **Track the sale** — answer buyers, handle logistics (coming later).
 
 We start small: pure *prompt* Skills (levels 1–2) that are useful from day one.
 The agentic parts (photo vision, price scraping, tracking) come next.
@@ -22,11 +24,12 @@ The agentic parts (photo vision, price scraping, tracking) come next.
 |-------|-------|--------|
 | [`declutter`](skills/declutter/) | 1 · Sorting coach | ✅ v0 |
 | [`offload`](skills/offload/) | 2 · What to do with it | ✅ v0 |
+| [`price-and-decide`](skills/price-and-decide/) | 2 · Price + one move | ✅ v0 |
 | [`sell`](skills/sell/) | 3 · Draft the ad | ✅ v0 |
 | `sale-tracker` | 4 · Follow-up | 🔭 later |
 
-The first three chain together: **sort → decide → draft the listing.** See
-[`examples/`](examples/) for concrete end-to-end cases.
+The first four chain together: **sort → decide route → price/one move → draft
+the listing.** See [`examples/`](examples/) for concrete end-to-end cases.
 
 ## Works anywhere
 
@@ -42,7 +45,7 @@ falls back to sensible global guidance and tells you so.
 ## Install
 
 These Skills follow the [Claude Agent Skills](https://docs.claude.com) format.
-Pick whichever door you like — they all end with the same three Skills in
+Pick whichever door you like — they all end with the same Skills in
 `~/.claude/skills/`.
 
 ### Door 1 — just ask your agent (no clone, no commands)
@@ -79,7 +82,7 @@ curl -fsSL https://raw.githubusercontent.com/1789-tech/grenier/main/install.sh |
 ```
 
 It clones this repo (or downloads the tarball if you have no `git`) and copies the
-three Skills into `~/.claude/skills/`. Override the target with
+Skills into `~/.claude/skills/`. Override the target with
 `CLAUDE_SKILLS_DIR=/path sh install.sh`. Read [`install.sh`](install.sh) first —
 it's ~40 lines and does nothing surprising.
 
@@ -108,7 +111,8 @@ No coding needed. If you can chat with Claude, you can use grenier. Try:
 | "Write me the ad for my bike: Trek FX 2, size M, good condition." | `sell` |
 | "Draft a listing for this coffee table." *(paste a photo)* | `sell` |
 | "What do I even do with this single weird item?" | `offload` |
-| "Turn my box of 40 books into the simplest possible outcome." | `offload` → `sell` |
+| "Turn my box of 40 books into the simplest possible outcome." | `offload` → `price-and-decide` |
+| "France: what price, and is this worth selling at all?" | `price-and-decide` |
 
 ## Contributing
 
