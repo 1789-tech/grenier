@@ -1,10 +1,11 @@
 # grenier 🏠📦
 
-> A Claude companion for **decluttering** your home — as a collection of *Skills*.
-> Sort it, decide what to do with it, sell or donate or recycle it. **English by
-> default, and it knows your local marketplaces.** Open source.
+> A Claude companion for **decluttering** your home — **one Skill** that walks the
+> whole arc. Sort it, decide what to do with it, sell or donate or recycle it.
+> **English by default, and it knows your local marketplaces.** Open source.
 
-`grenier` is a collection of **Claude Skills** that help you:
+`grenier` is **one Claude Skill** you invoke once ("help me declutter"). It walks
+the whole journey, going deeper only when your situation reaches that stage:
 
 1. **Sort** — a method, exercises, steps and techniques to take on the clutter.
 2. **Decide what to do with each thing** — sell (and where), donate, recycle, or
@@ -15,28 +16,31 @@
    suggest a price, write the listing, bundle lots.
 5. **Track the sale** — answer buyers, handle logistics (coming later).
 
-We start small: pure *prompt* Skills (levels 1–2) that are useful from day one.
-The agentic parts (photo vision, price scraping, tracking) come next.
+One name, one trigger, one mental model. Under the hood it's a lean entry point
+that **loads deeper knowledge only when the flow reaches it** — the native Claude
+Skills [progressive-disclosure](https://docs.claude.com) pattern. No picking the
+"right" sub-skill first.
 
-## Skills
+## How it's built
 
-| Skill | Level | Status |
-|-------|-------|--------|
-| [`declutter`](skills/declutter/) | 1 · Sorting coach | ✅ v0 |
-| [`offload`](skills/offload/) | 2 · What to do with it | ✅ v0 |
-| [`price-and-decide`](skills/price-and-decide/) | 2 · Price + one move | ✅ v0 |
-| [`sell`](skills/sell/) | 3 · Draft the ad | ✅ v0 |
-| `sale-tracker` | 4 · Follow-up | 🔭 later |
+| Piece | Role |
+|-------|------|
+| [`skills/grenier/SKILL.md`](skills/grenier/) | The coach/orchestrator — the whole journey + the sorting stage |
+| [`references/disposition.md`](skills/grenier/references/disposition.md) | Sell / donate / recycle / trash arbitrage — loaded when items head out |
+| [`references/pricing.md`](skills/grenier/references/pricing.md) | Realistic value + the one best move — loaded on "what's it worth?" |
+| [`references/listing.md`](skills/grenier/references/listing.md) | Draft the ad — loaded when it's time to sell |
+| [`countries/<iso2>.md`](skills/grenier/countries/) | Local marketplaces, donation/recycling routes, pricing & listing conventions |
+| `sale-tracker` | Follow-up (answer buyers, logistics) — 🔭 later |
 
-The first four chain together: **sort → decide route → price/one move → draft
-the listing.** See [`examples/`](examples/) for concrete end-to-end cases.
+The stages flow: **sort → decide route → price/one move → draft the listing.** See
+[`examples/`](examples/) for concrete end-to-end cases.
 
 ## Works anywhere
 
-The Skills are written in **English** and country-agnostic at their core. The
-`offload` and `sell` Skills load a small **local recipe** for your country —
-which marketplaces, donation networks, recycling routes and listing conventions
-apply where you live.
+The Skill is written in **English** and country-agnostic at its core. When the
+flow reaches disposition, pricing or listing it loads a small **local recipe**
+for your country (`countries/<iso2>.md`) — which marketplaces, donation networks,
+recycling routes, pricing norms and listing conventions apply where you live.
 
 **France, US and UK today** — and adding yours is one file
 (`countries/<iso2>.md`). If there's no recipe for your country yet, the Skill
@@ -44,8 +48,8 @@ falls back to sensible global guidance and tells you so.
 
 ## Install
 
-These Skills follow the [Claude Agent Skills](https://docs.claude.com) format.
-Pick whichever door you like — they all end with the same Skills in
+This Skill follows the [Claude Agent Skills](https://docs.claude.com) format.
+Pick whichever door you like — they all end with the same Skill in
 `~/.claude/skills/`.
 
 ### Door 1 — just ask your agent (no clone, no commands)
@@ -54,11 +58,11 @@ Paste this into [Claude Code](https://claude.com/claude-code) (or any
 Skills-compatible agent):
 
 ```
-Install the grenier skills from https://github.com/1789-tech/grenier
+Install the grenier skill from https://github.com/1789-tech/grenier
 into ~/.claude/skills/, then help me start decluttering.
 ```
 
-The agent fetches the `skills/` folder, drops each Skill into `~/.claude/skills/`,
+The agent fetches the `skills/` folder, drops the Skill into `~/.claude/skills/`,
 and you're ready. This is the easiest path if you're already chatting with Claude.
 
 ### Door 2 — native plugin (Claude Code marketplace)
@@ -70,7 +74,7 @@ grenier is a Claude Code **plugin**. Add the marketplace once, then install:
 /plugin install grenier@grenier
 ```
 
-Claude Code handles updates and keeps the Skills in sync with the repo. This is
+Claude Code handles updates and keeps the Skill in sync with the repo. This is
 the recommended path for Claude Code users.
 
 ### Door 3 — one-line install script (`curl | sh`)
@@ -82,7 +86,7 @@ curl -fsSL https://raw.githubusercontent.com/1789-tech/grenier/main/install.sh |
 ```
 
 It clones this repo (or downloads the tarball if you have no `git`) and copies the
-Skills into `~/.claude/skills/`. Override the target with
+Skill into `~/.claude/skills/`. Override the target with
 `CLAUDE_SKILLS_DIR=/path sh install.sh`. Read [`install.sh`](install.sh) first —
 it's ~40 lines and does nothing surprising.
 
@@ -93,31 +97,32 @@ git clone https://github.com/1789-tech/grenier
 cp -r grenier/skills/* ~/.claude/skills/
 ```
 
-Or just open Claude Code inside the cloned `grenier/` folder — the Skills in
-`skills/` are available directly.
+Or just open Claude Code inside the cloned `grenier/` folder — the Skill in
+`skills/` is available directly.
 
 ## Say something like…
 
-No coding needed. If you can chat with Claude, you can use grenier. Try:
+No coding needed. If you can chat with Claude, you can use grenier. It's one
+Skill — the same trigger for all of these; it works out which stage you're at:
 
-| You say… | Skill that triggers |
+| You say… | Stage it walks into |
 |----------|---------------------|
-| "My garage is a total mess and I don't know where to start." | `declutter` |
-| "Help me sort my bedroom, I've got 20 minutes." | `declutter` |
-| "I've got an old bike, a box of novels and a broken printer to get rid of." | `offload` |
-| "Where do I sell or donate this old sofa?" | `offload` |
-| "I'm in the US — what do I do with a bunch of furniture I don't want?" | `offload` (US recipe) |
-| "UK here — I've got dead electronics and e-waste to deal with." | `offload` (UK recipe) |
-| "Write me the ad for my bike: Trek FX 2, size M, good condition." | `sell` |
-| "Draft a listing for this coffee table." *(paste a photo)* | `sell` |
-| "What do I even do with this single weird item?" | `offload` |
-| "Turn my box of 40 books into the simplest possible outcome." | `offload` → `price-and-decide` |
-| "France: what price, and is this worth selling at all?" | `price-and-decide` |
+| "My garage is a total mess and I don't know where to start." | sort |
+| "Help me sort my bedroom, I've got 20 minutes." | sort |
+| "I've got an old bike, a box of novels and a broken printer to get rid of." | decide (disposition) |
+| "Where do I sell or donate this old sofa?" | decide (disposition) |
+| "I'm in the US — what do I do with a bunch of furniture I don't want?" | decide (US recipe) |
+| "UK here — I've got dead electronics and e-waste to deal with." | decide (UK recipe) |
+| "Write me the ad for my bike: Trek FX 2, size M, good condition." | draft the listing |
+| "Draft a listing for this coffee table." *(paste a photo)* | draft the listing |
+| "What do I even do with this single weird item?" | decide (disposition) |
+| "Turn my box of 40 books into the simplest possible outcome." | decide → price |
+| "France: what price, and is this worth selling at all?" | price (one move) |
 
 ## Contributing
 
 The most useful contributions: **local recipes** (add your country) and improving
-the existing Skills. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+the Skill. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## License
 

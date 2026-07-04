@@ -7,8 +7,12 @@ run: validate
 validate:
 	@jq -e '.cases | type == "array" and length > 0' evals/evals.json >/dev/null
 	@jq -e 'all(.cases[]; (.id|type=="string") and (.skill|type=="string") and (.prompt|type=="string") and (.delta|type=="string") and (.must_include|type=="array") and (.must_avoid|type=="array"))' evals/evals.json >/dev/null
-	@for skill in declutter offload price-and-decide sell; do \
-		test -f "skills/$$skill/SKILL.md" || { echo "missing skill: $$skill"; exit 1; }; \
+	@test -f skills/grenier/SKILL.md || { echo "missing skill: grenier"; exit 1; }
+	@for ref in disposition pricing listing; do \
+		test -f "skills/grenier/references/$$ref.md" || { echo "missing reference: $$ref"; exit 1; }; \
+	done
+	@for iso in fr us uk; do \
+		test -f "skills/grenier/countries/$$iso.md" || { echo "missing country recipe: $$iso"; exit 1; }; \
 	done
 	@jq -r '.cases[].skill' evals/evals.json | while read -r skill; do \
 		test -f "skills/$$skill/SKILL.md" || { echo "eval references missing skill: $$skill"; exit 1; }; \

@@ -1,6 +1,6 @@
 # Example — drafting a bike ad
 
-**Skill:** `sell`
+**Stage:** listing · one Skill: `grenier`
 
 ## What you say
 

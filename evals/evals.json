@@ -2,27 +2,58 @@
   "cases": [
     {
       "id": "price-bike-balanced-one-move",
-      "skill": "price-and-decide",
+      "skill": "grenier",
       "prompt": "France. J'ai un velo enfant Decathlon 20 pouces, bon etat, quelques rayures. Je veux un choix equilibre, pas y passer deux semaines.",
       "delta": "With the skill, the answer must collapse pricing and channel into one balanced move instead of listing every resale platform.",
-      "must_include": ["Leboncoin", "35", "une", "accepte", "remise en main propre"],
-      "must_avoid": ["eBay", "Vinted", "trois options", "comme neuf"]
+      "must_include": [
+        "Leboncoin",
+        "35",
+        "une",
+        "accepte",
+        "remise en main propre"
+      ],
+      "must_avoid": [
+        "eBay",
+        "Vinted",
+        "trois options",
+        "comme neuf"
+      ]
     },
     {
       "id": "price-books-flips-by-priority",
-      "skill": "price-and-decide",
+      "skill": "grenier",
       "prompt": "France. J'ai 35 romans poche ordinaires et 4 beaux livres d'art. Compare max cash vs vite debarrasse, puis donne un seul move pour chaque priorite.",
       "delta": "With the skill, the answer must show the priority fork: valuable books can split for max cash, ordinary books go bulk for speed.",
-      "must_include": ["Momox", "RecycLivre", "beaux livres", "max cash", "vite"],
-      "must_avoid": ["un par un pour les romans", "liste chaque roman", "Amazon"]
+      "must_include": [
+        "Momox",
+        "RecycLivre",
+        "beaux livres",
+        "max cash",
+        "vite"
+      ],
+      "must_avoid": [
+        "un par un pour les romans",
+        "liste chaque roman",
+        "Amazon"
+      ]
     },
     {
       "id": "price-low-value-not-worth-selling",
-      "skill": "price-and-decide",
+      "skill": "grenier",
       "prompt": "France. Lampe Ikea basique, correcte, peut-etre 8 euros. Priorite: mental load minimal.",
       "delta": "With the skill, the answer must protect mental load by refusing a low-value standalone sale.",
-      "must_include": ["pas la peine", "donne", "Geev", "10", "effort"],
-      "must_avoid": ["Leboncoin a 8", "maximiser", "attendre"]
+      "must_include": [
+        "pas la peine",
+        "donne",
+        "Geev",
+        "10",
+        "effort"
+      ],
+      "must_avoid": [
+        "Leboncoin a 8",
+        "maximiser",
+        "attendre"
+      ]
     }
   ]
 }

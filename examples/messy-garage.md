@@ -1,6 +1,6 @@
 # Example — taking on a messy garage
 
-**Skill:** `declutter`
+**Stage:** sort · one Skill: `grenier`
 
 ## What you say
 
@@ -9,7 +9,7 @@
 
 ## What Claude does (abbreviated)
 
-`declutter` triggers itself and frames the session:
+grenier triggers itself and frames the sorting stage:
 
 - **One single target:** not "the garage" but *one workbench* or *one shelf*.
 - **Four destinations, zero "maybe":** `keep` · `sell/donate` · `recycle` ·
@@ -20,4 +20,4 @@
   bag by the front door), and a number: "1 shelf, 22 items, 1 donate bag."
 - **Next micro-target** suggested, not imposed.
 
-Every item marked `sell/donate` → hand off to `offload`.
+Every item marked `sell/donate` → grenier flows into the disposition stage (`references/disposition.md`).

@@ -1,6 +1,6 @@
 # Example — one price, one move
 
-**Skill:** `price-and-decide`
+**Stage:** pricing · one Skill: `grenier`
 
 ## What you say
 
@@ -9,7 +9,7 @@
 
 ## What Claude does (abbreviated)
 
-`price-and-decide` asks or infers the priority, then gives a compact decision:
+grenier's pricing stage asks or infers the priority, then gives a compact decision:
 
 ```text
 PRIORITÉ : équilibré

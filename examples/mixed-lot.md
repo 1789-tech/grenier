@@ -1,6 +1,6 @@
 # Example — a mixed lot to deal with
 
-**Skill:** `offload` *(France recipe, for illustration)*
+**Stage:** disposition · one Skill: `grenier` *(France recipe, for illustration)*
 
 ## What you say
 
@@ -10,11 +10,10 @@
 
 ## What Claude does (abbreviated)
 
-`offload` detects the country (French context here → reads `countries/fr.md`) and
-**groups by channel** instead of item by item:
+grenier reaches the disposition stage, detects the country (French context here → reads `countries/fr.md`) and **groups by channel** instead of item by item:
 
 - **Working bike** → *Leboncoin*, local pickup. Real value, sells fast locally.
-  → draft the ad via `sell`.
+  → draft the ad in the listing stage.
 - **30 novels** → *Momox / RecycLivre*: scan the ISBNs, they buy and pay postage.
   Zero friction for low-per-item volume.
 - **Dead microwave** → *déchèterie / e-waste (DEEE)* or in-store take-back
