@@ -1,6 +1,6 @@
 # Example — "what do I even do with this?" (single item)
 
-**Skill:** `offload` *(one item, one fast decision)*
+**Stage:** disposition · one Skill: `grenier` *(one item, one fast decision)*
 
 ## What you say
 
@@ -9,7 +9,7 @@
 
 ## What Claude does (abbreviated)
 
-`offload` runs the **arbitrage reflex** on the single item, then routes:
+grenier runs the disposition **arbitrage reflex** on the single item, then routes:
 
 1. **Worth anything?** A working branded espresso machine has real resale value
    (roughly $30–$80 / £30–£70 depending on model) → worth selling.
@@ -20,7 +20,7 @@
    - US → *Facebook Marketplace*, local pickup.
    - UK → *Facebook Marketplace / eBay UK*.
    - FR → *Leboncoin*.
-   - Descaled and photographed → hand to `sell` for the ad.
+   - Descaled and photographed → move to the listing stage for the ad.
 
 > If it were **broken**, the answer flips instantly: e-waste, not a listing —
 > don't waste effort trying to sell a dead appliance.

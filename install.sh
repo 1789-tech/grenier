@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
-# grenier installer — copies the grenier Skills into your Claude skills dir.
+# grenier installer — copies the grenier Skill into your Claude skills dir.
 #
 # Inspect this script before you run it. It does exactly one thing: fetch this
-# repo's `skills/` folder and copy the Skills into ~/.claude/skills/.
+# repo's `skills/` folder and copy the Skill into ~/.claude/skills/.
 # No sudo, no network calls beyond the clone/tarball, no state left behind.
 #
 # Usage:
@@ -16,7 +16,7 @@ set -eu
 
 REPO="https://github.com/1789-tech/grenier"
 DEST="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
-SKILLS="declutter offload price-and-decide sell"
+SKILLS="grenier"
 
 printf 'grenier → installing skills into: %s\n' "$DEST"
 mkdir -p "$DEST"

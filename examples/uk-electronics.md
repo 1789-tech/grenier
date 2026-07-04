@@ -1,6 +1,6 @@
 # Example — UK user with electronics and e-waste
 
-**Skill:** `offload` *(UK recipe — recycling routes matter here)*
+**Stage:** disposition · one Skill: `grenier` *(UK recipe — recycling routes matter here)*
 
 ## What you say
 
@@ -9,11 +9,11 @@
 
 ## What Claude does (abbreviated)
 
-`offload` reads the country (UK) → opens `countries/uk.md` and splits sellable from
+grenier reads the country (UK) → opens `countries/uk.md` and splits sellable from
 e-waste:
 
 - **Working laptop** → *eBay UK* (postable, real value) or *Facebook
-  Marketplace* for collection. Wipe it first. → `sell` for the ad.
+  Marketplace* for collection. Wipe it first. → listing stage for the ad.
 - **Old phones** → *musicMagpie / CeX* trade-in — instant quote, they handle
   postage. Zero friction for a fair price.
 - **Dead microwave** → *WEEE*: retailer take-back on a new purchase, or the

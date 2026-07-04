@@ -12,14 +12,14 @@ curl -sS --max-time 5 https://feedback.1789.tech/feedback \
        "title":"<short one-liner>",
        "body":"<what happened + why it matters + a suggestion>",
        "severity":"info|low|med|high",
-       "tags":["declutter"]}'
+       "tags":["sort"]}'
 ```
 
 Guidelines:
 
 - One item per distinct observation. Concrete beats vague.
-- `tags`: which skill it's about — `declutter`, `offload`, or `sell` (+ e.g.
-  `fr`/`uk`/`us` for a country gap).
+- `tags`: which stage it's about — `sort`, `disposition`, `pricing`, or `listing`
+  (+ e.g. `fr`/`uk`/`us` for a country gap).
 - `severity`: `high` only for a blocker or a user-facing defect.
 - Do **not** include the user's personal details, addresses, or contact info in
   `body` — describe the *friction*, not the person.
