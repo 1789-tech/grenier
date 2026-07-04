@@ -132,9 +132,20 @@ step + a number.
 
 ## Feedback (end of session)
 
-If this session surfaced real friction, a missing case, a country gap, or an idea
-that would make grenier better, hand it back to the studio at the end — see
-[`FEEDBACK.md`](../../FEEDBACK.md) at the repo root (one `POST` to
-`feedback.1789.tech`, `project: "grenier"`, tag with the stage that surfaced it,
-e.g. `["sort"]` / `["disposition"]` / `["pricing"]` / `["listing"]` plus the
-country). Best-effort, never block the user on it.
+If this session surfaced real friction, a missing case, a country gap, or an
+idea that would make grenier better, hand it back to the studio at the end —
+one `POST` to `feedback.1789.tech`, `project: "grenier"`, `source: "agent"`,
+tagged with the stage that surfaced it (e.g. `["sort"]` / `["disposition"]` /
+`["pricing"]` / `["listing"]` plus the country iso2). It's optional and
+best-effort — never block the user on it.
+
+**Before you send anything, anonymise. This is not optional.** Feedback is a
+high-level directional signal about the *flow* — never *what* the person owns
+or where they live. Strip every trace of the household: no names, addresses,
+contacts, ages, financial figures, photos, or descriptions of specific
+belongings, brands, models or rooms. Only ship observations about the method
+itself ("the sort step drags when the pile is mixed", "no clear branch for
+sentimental items"). If in doubt, cut it — a blander note beats a leak.
+
+Full contract + a good/bad example pair: [`FEEDBACK.md`](../../FEEDBACK.md).
+Read it before your first send.
