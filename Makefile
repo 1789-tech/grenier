@@ -1,8 +1,15 @@
-.PHONY: test run validate
+.PHONY: test run validate evals
 
-test: validate
+test: validate evals
 
 run: validate
+
+# evals runs the Go harness: unit tests + structural validation of the fixtures
+# against the current single-skill layout. Set EVAL_GENERATE_CMD to also score
+# with-skill vs without-skill answers (see evals/README.md).
+evals:
+	go test ./...
+	go run ./cmd/grenier-evals
 
 validate:
 	@jq -e '.cases | type == "array" and length > 0' evals/evals.json >/dev/null
