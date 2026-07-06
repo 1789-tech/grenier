@@ -54,6 +54,42 @@
         "maximiser",
         "attendre"
       ]
+    },
+    {
+      "id": "method-lamp-computes-net-refusal",
+      "skill": "grenier",
+      "prompt": "France. Lampe Ikea basique, correcte, probablement 8 euros. Priorite equilibree. Montre le calcul et dis quoi faire.",
+      "delta": "With the skill, the answer must compute net value and refuse the standalone micro-sale.",
+      "must_include": [
+        "cash",
+        "effort",
+        "Geev",
+        "pas",
+        "don"
+      ],
+      "must_avoid": [
+        "mets-la a 8",
+        "Leboncoin a 8",
+        "max cash"
+      ]
+    },
+    {
+      "id": "method-receipt-derived-not-fabricated",
+      "skill": "grenier",
+      "prompt": "France. J'ai un velo enfant Decathlon, une lampe Ikea basique et 30 romans ordinaires. Priorite equilibree. Donne le plan et un recu.",
+      "delta": "With the skill, receipt totals must derive from item-level decisions and include cash range, effort avoided, exits and first action.",
+      "must_include": [
+        "decisions",
+        "cash",
+        "effort",
+        "premier",
+        "J+3"
+      ],
+      "must_avoid": [
+        "cash garanti",
+        "prix certain",
+        "vendre chaque roman"
+      ]
     }
   ]
 }

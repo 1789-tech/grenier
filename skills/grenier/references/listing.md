@@ -39,7 +39,7 @@ currency if you can tell it, and **say so**.
 3. **Pick the platform.** One primary recommendation + one alternative, with the
    why in a word (see `references/disposition.md` for the full arbitrage).
 4. **Write the listing.** Produce a **copyable** block:
-   - **Title** — short, brand + model + condition + key info. Search-optimized.
+   - **Title** — buyer keywords: brand + model + condition + key info. No poetry.
    - **Price** — the suggested one, in local currency.
    - **Description** — 4–8 lines: what it is, honest condition (defects included),
      useful dimensions/specs, reason for sale if it helps, terms (local pickup /
@@ -50,6 +50,18 @@ currency if you can tell it, and **say so**.
 6. **Lots.** For several similar items, offer to group them into one "bundle"
    listing with a total price, or a reusable template to run item by item.
 
+## Listing that sells fast
+
+- Photo 1: whole object. Photo 2: brand/model/label. Photo 3: defect or wear.
+  Photo 4: scale, dimensions, accessories or contents.
+- Mention the visible defect before the buyer has to ask.
+- Include one anti-stagnation line when culturally appropriate: "Fair price for a
+  fast pickup; I'll drop it on Friday if needed."
+- Handover script: propose a firm time window and area; no reservation without a
+  pickup time.
+- For marketplace automation, draft first. Never publish by accident; report
+  which fields were guessed and which need human confirmation.
+
 ## Output format
 
 Always return the listing in a clearly delimited block, ready to copy:
@@ -59,6 +71,7 @@ TITLE: <title>
 PRICE: <xx> (range: <low>–<high>)
 PLATFORM: <e.g. Facebook Marketplace / eBay / Vinted> — <reason in a word>
 CATEGORY: <platform category>
+DEADLINE: <drop price at D+3; exit route at D+7>
 
 <description, 4–8 lines>
 

@@ -11,8 +11,8 @@ Often, donating fast beats selling slowly.
 Ask, in order:
 
 1. **Is it worth anything?** Roughly estimate a realistic *resale* value (not the
-   new price). Below ~$/€/£10–15, selling one item costs more time than it returns
-   → **donate / recycle**.
+   new price). Below the local balanced cutoff (default 20 units), selling one
+   item often costs more time than it returns → **donate / bundle / recycle**.
 2. **Is the effort worth it?** Selling = photo + listing + messages + handover.
    Count ~20–40 min per item sold individually. If the value doesn't cover that
    and you don't enjoy it → donate.
@@ -22,8 +22,22 @@ Ask, in order:
    **recycling / e-waste**, don't bother trying to sell.
 
 > Simple rule: **sell** what has value AND sells fast; **donate** what's good but
-> cheap or annoying to sell; **recycle/trash** what's dead. When in doubt between
-> selling and donating → donate (it's gone today).
+> cheap or annoying to sell; **recycle/trash** what's dead. When net value is
+> unclear and the item is ordinary, donate or bundle. When regret risk or
+> replacement cost is high, keep intentionally with an assigned home and review
+> date.
+
+## Five object classes
+
+Use these classes before picking a channel:
+
+| Class | Diagnostic | Default move |
+|---|---|---|
+| **Liquid** | Clear demand, easy to describe, easy handoff/shipping, value above cutoff. | Sell individually on one channel. |
+| **Bulky local** | Worth something, but transport/messages are painful. | Local marketplace, aggressive price, short deadline, then donation/pickup. |
+| **Long tail** | Collector, rare, niche, model-specific, or proof-dependent. | Specialized/eBay-style route only for max cash; otherwise honest lower-value route. |
+| **Low-value volume** | Books, ordinary clothes, CDs/DVDs, small goods. | Buy-back, bundle, donation, vide-grenier; never one-by-one listings. |
+| **Disguised waste** | Broken, incomplete, unsafe, stained, expired, obsolete. | Recycle, e-waste, textile bin, hazardous route or trash. |
 
 ## Localize
 
@@ -56,7 +70,9 @@ When the person describes an object (or a lot):
    (value vs. effort).
 3. **Route**: name 1–2 precise channels for that item (from the country file),
    simplest to most rewarding, and say which you'd pick in their shoes.
-4. **Concrete next step**: "take 2 photos and list it at $25" or "put it in the
+4. **Deadline** for any sale: D+3 adjust/drop, D+7 exit route, D+14 ordinary item
+   leaves the home.
+5. **Concrete next step**: "take 2 photos and list it at $25" or "put it in the
    donate bag."
 
 For a **mixed lot**, group by channel rather than item by item: "the 30 books →

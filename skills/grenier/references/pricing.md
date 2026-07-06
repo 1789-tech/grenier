@@ -35,8 +35,9 @@ generic fallback below and say the advice isn't country-tailored.
 - Price from **sold or realistic used listings**, not new retail price.
 - For common second-hand goods, start at roughly **25–50% of new price** in good
   condition, lower for bulky, dated, damaged, or hard-to-ship items.
-- Below **10–15 units of local currency net**, single-item selling is usually not
-  worth the photo + listing + message + handover loop.
+- Below the local cutoff (default **20 units of local currency** in balanced
+  mode), single-item selling is usually not worth the photo + listing + message +
+  handover loop. Country files may override this.
 - Similar low-value items should be **bundled**: books by genre/author, kids'
   clothes by size, kitchenware as a starter lot, small toys as a box.
 - Broken electronics, stained textiles, incomplete toys, and unsafe items should
@@ -65,18 +66,57 @@ That is a successful answer, not a failure.
 - Split lots only when the extra money is clearly worth the extra handling.
 - Still refuse false optimization: don't suggest a 5-unit item as a standalone
   sale just because it might sell someday.
+- The 20/20/20 cutoff loosens here: standalone sale can make sense around 40
+  units, 45 minutes, or 30 days when the demand is real and the user knowingly
+  chose cash over speed.
 
 ### Balanced
 - Optimize for the best money-to-hassle ratio.
 - Prefer one clean listing, one bundle, one local pickup, or one buy-back shipment
   over many small decisions.
 - Price to sell in days, not to sit for weeks.
+- Apply the default 20/20/20 cutoff: under 20 units, over 20 minutes of effort, or
+  over 20 days expected exit usually means bundle / donate / recycle, not
+  standalone sale.
 
 ### Gone fast
 - Prefer immediate routes: local pickup at a friendly price, buy-back services,
   donation, giving apps, recycling, or bulk clearance.
 - Recommend selling only if the item has obvious demand and can leave quickly.
 - Drop the price rather than spend mental energy chasing the top of the range.
+- Tighten the cutoff: if it cannot plausibly leave in about 7 days, route it out
+  without a standalone sale.
+
+## Net-value calculation
+
+Use the formula from `references/method.md` whenever effort changes the answer:
+
+```text
+net exit value = realistic cash - effort tax + exit value - regret risk
+```
+
+Keep the math compact and honest. Effort tax can be expressed as time or as a
+rough money-equivalent. The point is to show the trade-off, not fake precision.
+
+Examples:
+
+```text
+Ikea lamp:
+  realistic cash = +8 units
+  effort tax     = -30 to -45 min (photos + messages + pickup)
+  exit value     = +1 quick object out
+  regret risk    = 0
+  -> balanced/gone fast: do not sell standalone; donate or bundle.
+```
+
+```text
+Kids' Decathlon bike:
+  realistic cash = +55 units target (45-65 range)
+  effort tax     = -30 to -45 min, local pickup
+  exit value     = +1 bulky item out of storage
+  regret risk    = 0 if no planned use
+  -> balanced: sell locally. Start 65, accept 55, drop 45 at D+3, donate/give away at D+7.
+```
 
 ## Output format
 
@@ -85,7 +125,9 @@ For each item or lot, return this compact structure:
 ```text
 PRIORITY: <max cash | balanced | gone fast>
 ESTIMATE: <realistic resale range> — <one-line reasoning / comp logic>
-MOVE: <one clear recommendation with price/channel/action>
+NET CALL: <worth selling | bundle | donate | recycle | keep> — <cash - effort + exit/regret logic>
+MOVE: <one clear recommendation with start / accept / deadline price when selling>
+EXIT: <D+3 / D+7 / D+14 policy, or immediate donate/recycle/keep action>
 WHY: <one sentence: money vs effort vs speed>
 OPTIONAL ALT: <only if genuinely useful; otherwise "none">
 ```

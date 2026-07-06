@@ -15,7 +15,7 @@ validate:
 	@jq -e '.cases | type == "array" and length > 0' evals/evals.json >/dev/null
 	@jq -e 'all(.cases[]; (.id|type=="string") and (.skill|type=="string") and (.prompt|type=="string") and (.delta|type=="string") and (.must_include|type=="array") and (.must_avoid|type=="array"))' evals/evals.json >/dev/null
 	@test -f skills/grenier/SKILL.md || { echo "missing skill: grenier"; exit 1; }
-	@for ref in disposition pricing listing; do \
+	@for ref in method disposition pricing listing; do \
 		test -f "skills/grenier/references/$$ref.md" || { echo "missing reference: $$ref"; exit 1; }; \
 	done
 	@for iso in fr us uk; do \
