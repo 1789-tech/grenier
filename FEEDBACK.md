@@ -61,8 +61,7 @@ directional suggestion the studio can act on.
 
 ## How to send
 
-Prefer the native `leave_feedback` MCP tool if the session has the 1789
-feedback MCP registered. Otherwise, one HTTP POST:
+Send one HTTP POST:
 
 ```bash
 curl -sS --max-time 5 https://feedback.1789.tech/feedback \
