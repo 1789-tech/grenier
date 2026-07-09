@@ -86,9 +86,10 @@ curl -fsSL https://raw.githubusercontent.com/1789-tech/grenier/main/install.sh |
 ```
 
 It clones this repo (or downloads the tarball if you have no `git`) and copies the
-Skill into `~/.claude/skills/`. Override the target with
-`CLAUDE_SKILLS_DIR=/path sh install.sh`. Read [`install.sh`](install.sh) first —
-it's ~40 lines and does nothing surprising.
+Skill into `~/.claude/skills/`. If you've relocated Claude's config with
+`CLAUDE_CONFIG_DIR`, the installer follows it (`$CLAUDE_CONFIG_DIR/skills`); or
+override the target explicitly with `CLAUDE_SKILLS_DIR=/path sh install.sh`. Read
+[`install.sh`](install.sh) first — it's ~40 lines and does nothing surprising.
 
 **By hand, if you prefer:**
 

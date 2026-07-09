@@ -10,12 +10,20 @@
 #   # or, override the destination:
 #   CLAUDE_SKILLS_DIR=/path/to/skills sh install.sh
 #
+# Destination resolution (first match wins):
+#   1. $CLAUDE_SKILLS_DIR            — explicit override
+#   2. $CLAUDE_CONFIG_DIR/skills     — follows a relocated Claude config dir
+#   3. $HOME/.claude/skills          — default
+# Note: Claude Code keys its config off CLAUDE_CONFIG_DIR, NOT XDG_CONFIG_HOME,
+# so we deliberately do not read XDG here — that would install where Claude
+# never looks for users who set XDG_CONFIG_HOME (most Linux desktops).
+#
 # Idempotent: re-running replaces each Skill cleanly (safe to upgrade).
 
 set -eu
 
 REPO="https://github.com/1789-tech/grenier"
-DEST="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
+DEST="${CLAUDE_SKILLS_DIR:-${CLAUDE_CONFIG_DIR:-$HOME/.claude}/skills}"
 SKILLS="grenier"
 
 printf 'grenier → installing skills into: %s\n' "$DEST"
