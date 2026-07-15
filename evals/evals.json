@@ -90,6 +90,81 @@
         "prix certain",
         "vendre chaque roman"
       ]
+    },
+    {
+      "id": "method-mixed-cave-derived-receipt",
+      "skill": "grenier",
+      "prompt": "France. Je vide une cave avec: velo enfant Decathlon 20 pouces bon etat, lampe Ikea basique, 30 romans poche ordinaires, 3 beaux livres art, micro-ondes en panne, 8 verres depareilles, manteau Mango M tres bon etat, sac designer possible sans preuve. Priorite equilibree. Donne un plan avec recu chiffre derive, deadlines, et premier geste.",
+      "delta": "With the skill, the answer must route mixed lots, refuse unsafe or low-value sales, and derive receipt totals from scored lots rather than inventing a global estimate.",
+      "must_include": [
+        "DEEE",
+        "Geev",
+        "cash",
+        "effort",
+        "J+3",
+        "J+7",
+        "recu"
+      ],
+      "must_avoid": [
+        "120-230",
+        "Vestiaire Collective ou LBC",
+        "origine non verifiee",
+        "vendre chaque roman"
+      ]
+    },
+    {
+      "id": "listing-vinted-drafts-safe-state",
+      "skill": "grenier",
+      "prompt": "France. J ai 12 vetements a mettre sur Vinted pendant que je dors. Je veux des brouillons prets a coller, sans publier, avec prix, categorie, titre, description, champs a verifier, et un resume de reprise apres coupure.",
+      "delta": "With the skill, draft production must be safe and resumable, not just copywriting.",
+      "must_include": [
+        "brouillon",
+        "ne pas publier",
+        "champs a verifier",
+        "statut",
+        "reprendre"
+      ],
+      "must_avoid": [
+        "publier entre",
+        "publier maintenant"
+      ]
+    },
+    {
+      "id": "method-resume-draft-map",
+      "skill": "grenier",
+      "prompt": "France. Reprise de session: hier on avait decide Vinted pour robe Sezane 38, jupe Maje 38, manteau Mango M; don Geev pour lampe Ikea et verres; Leboncoin pour velo enfant; verification obligatoire pour sac designer sans preuve. J ai ete coupe apres 3 brouillons. Reprends sans refaire le raisonnement.",
+      "delta": "With the skill, resumption must reconcile completed drafts before doing more work and forbid accidental publication.",
+      "must_include": [
+        "brouillons",
+        "verifier",
+        "doublons",
+        "ne pas publier",
+        "sac designer"
+      ],
+      "must_avoid": [
+        "recommencer",
+        "refaire tout",
+        "publier maintenant"
+      ]
+    },
+    {
+      "id": "platform-friction-deadline-veto",
+      "skill": "grenier",
+      "prompt": "France. Je dois creer des annonces sur Vinted et Leboncoin. Objets: lot vetements femme, velo enfant Decathlon, livres ordinaires, sac designer sans preuve, micro-ondes en panne. Donne le workflow concret, les risques de mauvais bouton, les brouillons, les prix/deadlines, et les objets a ne pas mettre.",
+      "delta": "With the skill, platform workflow must include safe draft handling, anti-paid-option caution, deadlines, and net-value vetoes for unsuitable objects.",
+      "must_include": [
+        "brouillon",
+        "options payantes",
+        "J+3",
+        "J+7",
+        "Momox",
+        "DEEE"
+      ],
+      "must_avoid": [
+        "deadline : aucune",
+        "micro-ondes sur Leboncoin",
+        "sac designer sur Vinted"
+      ]
     }
   ]
 }
