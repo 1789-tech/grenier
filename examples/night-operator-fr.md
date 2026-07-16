@@ -45,8 +45,9 @@ Same opener. grenier reads the batch framing, and:
 1. **Opens memory first** (`references/memory.md`) — because a night run without
    persistence can't be safely resumed:
 
-   > On dépasse le mode jetable. J'ouvre `grenier-inventory/inventory.jsonl` pour
-   > garder chaque décision et reprendre demain sans que tu recolles tout. OK ?
+   > On dépasse le mode jetable. Je te propose d'ouvrir
+   > `grenier-inventory/inventory.jsonl` pour garder chaque décision et reprendre
+   > demain sans que tu recolles tout. OK ?
 
 2. **Runs the pile unattended tomorrow morning** (`references/night-operator.md`):
    per item → identify → net-exit decision → price → channel → **draft**, writing
