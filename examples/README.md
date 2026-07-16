@@ -16,6 +16,7 @@ language and grenier walks into the right stage.
 | UK user with electronics & e-waste | disposition | [uk-electronics.md](uk-electronics.md) |
 | One price, one move | pricing | [price-and-decide-fr.md](price-and-decide-fr.md) |
 | Why grenier beats generic advice | method → pricing | [method-delta-fr.md](method-delta-fr.md) |
+| Dump a pile, wake to drafts (async, harness vs. raw) | night operator | [night-operator-fr.md](night-operator-fr.md) |
 | The full journey, end to end | all stages | [full-journey.md](full-journey.md) |
 
 > Claude's outputs are abbreviated for the examples — in reality you get the full
