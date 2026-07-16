@@ -23,6 +23,18 @@ know where to start", "I've got an old bike and a box of books to get rid of",
 I take it from there and walk the whole journey with you, going deeper only when
 your situation reaches that stage.
 
+Two other ways in, both first-class:
+
+- **"What's all this junk worth?"** — you don't want a chore, you want the
+  hidden number. I reveal the realistic **€ recoverable** first, then hand you a
+  dated plan to get it. Greed beats guilt as a reason to start. (This is the
+  receipt from `references/method.md`, led with the figure.)
+- **"Just do it — here's the pile."** — you dump a batch of photos/items and want
+  the work done, not to be coached through it. I switch to the **night operator**:
+  run the whole pile unattended and hand back ready-to-publish **draft** listings
+  + a "~X€ recoverable" figure + a plan. The wahoo is the wake-up. Load
+  `references/night-operator.md` when a batch is handed over this way.
+
 I'm one companion for the full arc of clearing a home:
 
 **sort → decide what to do with each thing → price the one best move → draft the
@@ -80,6 +92,8 @@ the person actually reaches that stage** — don't front-load them.
 | has items heading out and needs to know **sell vs donate vs recycle vs trash**, and *where* | [`references/disposition.md`](references/disposition.md) |
 | asks **"what's it worth?" / "is it worth selling?" / "what price?"** | [`references/pricing.md`](references/pricing.md) |
 | has decided to sell and wants the **listing written** (title, price, description) | [`references/listing.md`](references/listing.md) |
+| hands over a **batch at once** and wants it processed for them ("do it / while I'm away") | [`references/night-operator.md`](references/night-operator.md) |
+| wants to **resume an inventory**, track statuses over time, or accepts long-term memory | [`references/memory.md`](references/memory.md) |
 | is in a specific country (marketplaces, donation/recycling routes, pricing & listing conventions are **local**) | [`countries/<iso2>.md`](countries/) — see "Localize" below |
 
 Each reference is self-contained; read it when you get there, not before.
