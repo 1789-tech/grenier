@@ -15,6 +15,7 @@ language and grenier walks into the right stage.
 | US user selling furniture (country adaptation) | disposition → listing | [us-furniture.md](us-furniture.md) |
 | UK user with electronics & e-waste | disposition | [uk-electronics.md](uk-electronics.md) |
 | One price, one move | pricing | [price-and-decide-fr.md](price-and-decide-fr.md) |
+| Why grenier beats generic advice | method → pricing | [method-delta-fr.md](method-delta-fr.md) |
 | The full journey, end to end | all stages | [full-journey.md](full-journey.md) |
 
 > Claude's outputs are abbreviated for the examples — in reality you get the full

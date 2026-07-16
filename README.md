@@ -26,6 +26,7 @@ Skills [progressive-disclosure](https://docs.claude.com) pattern. No picking the
 | Piece | Role |
 |-------|------|
 | [`skills/grenier/SKILL.md`](skills/grenier/) | The coach/orchestrator — the whole journey + the sorting stage |
+| [`references/method.md`](skills/grenier/references/method.md) | Signature method — net exit value, 20/20/20 cutoff, receipt contract |
 | [`references/disposition.md`](skills/grenier/references/disposition.md) | Sell / donate / recycle / trash arbitrage — loaded when items head out |
 | [`references/pricing.md`](skills/grenier/references/pricing.md) | Realistic value + the one best move — loaded on "what's it worth?" |
 | [`references/listing.md`](skills/grenier/references/listing.md) | Draft the ad — loaded when it's time to sell |
