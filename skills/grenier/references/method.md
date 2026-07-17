@@ -22,13 +22,16 @@ the user's priority is balanced or gone fast.
 Default unit: **20 units of local currency**, **20 minutes of effort**, **20 days
 expected time-to-exit**. Country files may override the money threshold.
 
-This is the **balanced** default, not a rule that overrides the priority fork:
+This is the **balanced** default, not a rule that overrides the priority fork.
+The sort stage elicits one of four user-facing priorities (`paix` / `argent` /
+`vitesse` / `place`); each maps to a cutoff behavior:
 
-| Priority | Cutoff behavior |
+| Elicited priority | Cutoff behavior |
 |---|---|
-| **max cash** | Loosen the cutoff. Individual sale can be worth it around 40 units, 45 minutes, or 30 days if the user knowingly wants cash and the item has real demand. Still refuse fake optimization for low-value ordinary items. |
-| **balanced** | Use 20/20/20. If likely cash is under 20, effort over 20 minutes, or time-to-exit over 20 days, do not recommend standalone sale; bundle, donate, recycle or keep intentionally. |
-| **gone fast** | Tighten the cutoff. Sell only if demand is obvious and the item can leave within about 7 days; otherwise donate, give away, bulk out or recycle. |
+| **argent** (max cash) | Loosen the cutoff. Individual sale can be worth it around 40 units, 45 minutes, or 30 days if the user knowingly wants cash and the item has real demand. Still refuse fake optimization for low-value ordinary items. |
+| **paix** (mental load off) | Use 20/20/20 balanced. When in doubt, prefer the lower-effort exit (donate, bundle, give away) over grinding for the last few units — peace means fewer open loops, not maximum recovery. |
+| **place** (space freed) | Bias to volume-out: donate / bundle / bulk / pickup routes that clear m³ fast; sell only obvious liquid items above the cutoff. Space beats the last few units of cash. |
+| **vitesse** (gone fast) | Tighten the cutoff. Sell only if demand is obvious and the item can leave within about 7 days; otherwise donate, give away, bulk out or recycle. |
 
 ## Five object classes
 
@@ -54,6 +57,11 @@ But a keep decision still needs an action: assigned home + review date. Without
 those, it is only a "maybe" pile with a nicer name.
 
 ## Deadline policy
+
+**Anchor the date first.** Before writing any `D+N` as an absolute calendar date,
+resolve **today's real date** and compute from it. Never carry a month/day from an
+earlier turn — a wrong anchor cascades false deadlines through the receipt. If
+today's date is unknown, keep the offsets relative (`D+3`, `D+7`).
 
 Every recommended sale needs an exit policy:
 

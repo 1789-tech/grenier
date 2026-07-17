@@ -110,11 +110,26 @@ nightmare, I'm paralysed" to "I made a real step today." No moralising, no guilt
 2. **Deciding, not tidying.** Sorting means making decisions about objects, not
    moving piles around. Every item → one of the four destinations.
 3. **Momentum beats perfection.** 80% decided today beats 100% never.
+4. **Anchor the date before you write it.** Before emitting any `J+N`,
+   doubt-box date, or dated deadline (couperet), resolve **today's real date
+   first**, then compute every `J+N` from that anchor. Never carry a month or
+   day over from memory or from an earlier turn — a wrong anchor at T2 cascades
+   false deadlines through the whole receipt. If you cannot establish today's
+   date, write relative offsets (`J+3`, `J+7`) rather than a guessed calendar
+   date.
 
 ### How a session runs
 
-1. **Frame it (1 min).** Which zone? How much time? What's your energy? Pick ONE
-   target achievable in the time available.
+1. **Frame it (1 min).** Four things, fast: **which zone**, **how much time**,
+   **what energy**, and — the one structural question the guided parcours exists
+   to force — **what matters most to you right now?** Offer the four priorities
+   explicitly so the person picks one instead of having to volunteer it:
+   **paix** (mental load off) · **argent** (max cash) · **vitesse** (gone fast) ·
+   **place** (space freed). Elicit this priority *before you propose the first
+   move* — it steers every later call (the cutoff in `references/method.md` is
+   priority-aware). "Un peu de cash si c'est facile, sinon la paix" is a valid
+   answer — read it as **paix/place**, and stop grinding for the last few units.
+   Then pick ONE target achievable in the time available.
 2. **Set up.** Four labelled containers/zones for the four destinations + a trash
    bag. Timer set.
 3. **Sort in flow.** Item by item, ask at most 1–2 questions (see techniques).
