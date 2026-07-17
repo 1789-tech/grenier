@@ -31,6 +31,7 @@ Skills [progressive-disclosure](https://docs.claude.com) pattern. No picking the
 | [`references/pricing.md`](skills/grenier/references/pricing.md) | Realistic value + the one best move — loaded on "what's it worth?" |
 | [`references/listing.md`](skills/grenier/references/listing.md) | Draft the ad — loaded when it's time to sell |
 | [`countries/<iso2>.md`](skills/grenier/countries/) | Local marketplaces, donation/recycling routes, pricing & listing conventions |
+| [`docs/marketplace-drivers-v1.md`](docs/marketplace-drivers-v1.md) | Open-source marketplace execution contract — browser drivers that fill drafts, never publish |
 | `sale-tracker` | Follow-up (answer buyers, logistics) — 🔭 later |
 
 The stages flow: **sort → decide route → price/one move → draft the listing.** See
