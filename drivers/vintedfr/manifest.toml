@@ -1,0 +1,35 @@
+id = "vinted-fr"
+country = "FR"
+display_name = "Vinted France"
+surface = "full_browser"
+# ToS posture is NOT presumed by this code. DEC-0130 leaves the acceptance of
+# `user_browser_tos_hostile` for the first driver as a Manfred arbitrage. Until
+# that is ruled, this driver is only ever run against the fixture DOM (dry-run /
+# CI), never against a real Vinted account. See docs/drivers/README.md.
+permission_posture = "user_browser_tos_hostile"
+detection_risk = "medium"
+max_items_per_run = 6
+last_verified = "2026-07-17"
+
+[draft]
+supported = true
+terminal_action = "save_draft"
+# Must stay false in V1: no publish write-path is wired. Enforced by
+# Manifest.Validate().
+publish_action_wired = false
+
+[selectors]
+# Accessible-name matchers for the terminal draft action and the publish action.
+# Confidence is field-report until verified against a live authorized session —
+# the manifest is part of the review surface, so this label is honest, not
+# aspirational. `new_listing_url` is only navigated against the fixture until the
+# ToS posture is ruled.
+new_listing_url = "https://www.vinted.fr/items/new"
+draft_action_names = ["enregistrer le brouillon", "sauvegarder le brouillon"]
+publish_action_names = ["publier", "mettre en ligne", "publier l'annonce"]
+confidence = "field-report"
+
+[sources]
+terms = "https://www.vinted.fr/terms_and_conditions"
+official_api = "https://pro-docs.svc.vinted.com/"
+robots = "https://www.vinted.fr/robots.txt"

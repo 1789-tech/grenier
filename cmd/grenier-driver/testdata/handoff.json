@@ -1,0 +1,29 @@
+{
+  "run_id": "grn-run-20260717-001",
+  "country": "FR",
+  "marketplace": "vinted-fr",
+  "items": [
+    {
+      "item_id": "grn-20260717-0001",
+      "title": "Veste denim Levi's taille M",
+      "description": "Bon etat, coupe droite, a retirer a Paris.",
+      "price_cents": 2800,
+      "currency": "EUR",
+      "category": "mode",
+      "condition": "good",
+      "photo_paths": ["photos/grn-20260717-0001-1.jpg"],
+      "attributes": {"brand": "Levi's", "size": "M"}
+    },
+    {
+      "item_id": "grn-20260717-0002",
+      "title": "Lot de 12 livres de poche",
+      "description": "Romans varies, bon etat general.",
+      "price_cents": 1500,
+      "currency": "EUR",
+      "category": "livres",
+      "condition": "good",
+      "photo_paths": ["photos/grn-20260717-0002-1.jpg"],
+      "attributes": {"quantity": "12"}
+    }
+  ]
+}

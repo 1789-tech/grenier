@@ -1,1 +1,5 @@
 /grenier-evals
+
+# driver runner artifacts
+cmd/grenier-driver/testdata/receipt.json
+cmd/grenier-driver/testdata/audit.jsonl
